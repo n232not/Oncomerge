@@ -1,15 +1,12 @@
 MEanalysis <- function(somMuts, pathways){
-  install.packages("Rediscover")
+  install.packages("Rediscover", repos='http://cran.us.r-project.org')
   if (!require("BiocManager", quietly = TRUE)){
-    install.packages("BiocManager")
+    install.packages("BiocManager", repos='http://cran.us.r-project.org')
   }
-  BiocManager::install("maftools")
+  BiocManager::install("maftools", repos='http://cran.us.r-project.org')
   library("Rediscover")
   library("tidyverse")
   library("discover")
-  pathways = pathways[!is.na(pathways$OM_empirical_p_value),]
-  pathways = pathways[pathways$OM_empirical_p_value < 0.01,]
-  pathways = pathways[pathways$Pathway_Length >1,]
   out = data.frame(names=character(), p_value=double())
   if (nrow(pathways) > 0){
     for (row in 1:nrow(pathways)) {

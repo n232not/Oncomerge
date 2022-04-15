@@ -81,12 +81,12 @@ def pathwayPool(i):
         tmp3 = [i[2].loc[np.random.choice(i[2].index, i[0])].sum().clip(0,1) for j in range(i[4])]
         temp = []
         for j in range(i[4]): 
-            temp.append(((tmp1[j] + tmp2[j] + tmp3[j]).sum())/(i[1].shape[1]))
+            temp.append((tmp1[j] + tmp2[j] + tmp3[j]).mean())
         perms = [str(i[0]), temp]
     else:
         temp = []
         for j in range(i[4]): 
-            temp.append(((tmp1[j] + tmp2[j]).sum())/(i[1].shape[1]))
+            temp.append((tmp1[j] + tmp2[j]).mean())
         perms = [str(i[0]), temp]
     return perms
 #%%
@@ -263,20 +263,17 @@ if __name__ == "__main__":
     print('Precomputing dichotomized matrices...')
     posdicot = (lambda x: 1 if x>=2 else 0)
     posD1 = d1.applymap(posdicot)
-    ampGenes = {j:i for i in ampLoci for j in ampLoci[i]}
+    posFreq = posD1[posD1.columns.difference(blacklist)].mean(axis=1)
+    ampGenes = {int(j):i for i in ampLoci for j in ampLoci[i]}
     negdicot = (lambda x: 1 if x<=(-2) else 0)
     negD1 = d1.applymap(negdicot)
-    delGenes = {j:i for i in delLoci for j in delLoci[i]}
+    negFreq = negD1[negD1.columns.difference(blacklist)].mean(axis=1)
+    delGenes = {int(j):i for i in delLoci for j in delLoci[i]}
     print('Finished precomputing dichotomized matrices.')
 
-
     # %%
-    ampGenes = {int(j):i for i in ampLoci for j in ampLoci[i]}
-    delGenes = {int(j):i for i in delLoci for j in delLoci[i]}
-    posFreq = posD1[posD1.columns.difference(blacklist)].mean(axis=1)
-    negFreq = negD1[negD1.columns.difference(blacklist)].mean(axis=1)
     # Add back genes that are high frequency amplification or deletion (20%)
-    for gene1 in list([i for i in posFreq.index if posFreq[i]>=0.2]):
+    for gene1 in list([i for i in posD1.index if posFreq[i]>=0.2]):
         if (not gene1 in ampGenes) and isinstance(lociThresh[gene1], str) and (lociThresh[gene1] in ampLoci_qv) and (gene1 in posD1.index):
             ampGenes[gene1] = lociThresh[gene1]
             ampLoci[lociThresh[gene1]].append(gene1)
@@ -294,40 +291,21 @@ if __name__ == "__main__":
     kegg = pd.read_csv(params['kegg'], header=0).iloc[: , 1:]
     huam = pd.read_csv(params['huamncyc'], header=None, sep=",").iloc[: , 1:3]
 
-    # %%
     gene2go.iloc[:,0] ='GO::' + gene2go.iloc[:,0]
-
-    # %%
     kegg.iloc[:,0] ='kegg::' + kegg.iloc[:,0]
     huam.iloc[:,0] ='humanCyc::' + huam.iloc[:,0]
-
-    # %%
     kegg.columns = pd.Index([1,2])
 
-    # %%
     pathways =pd.DataFrame(pd.concat([gene2go, kegg, huam], axis=0).iloc[:,0:2]).dropna()
-
-
-
-    # %%
     pathways.columns = ['Pathway', 'Genes']
-
-    # %%
     pathways['Genes'] = pathways['Genes'].apply(lambda x: list(map(int, str(x).split(' '))))
     pathways = pathways.loc[pathways['Genes'].map(len) > 1]
-
-    # %%
     genes = pathways['Genes'].map(set)
     pathways['Genes'] = genes.map(list)
-
-    # %%
     pathways = pathways[~pathways.duplicated(subset = "Pathway", keep='last')]
-
-    # %%
     pathways.index = range(len(pathways.index))
-
-    # %%
     pathways["PathwayID"] = pd.Series(pathways.index).astype(int) + 1000000001
+    pathways["Pathway"] = pathways["Pathway"].str.replace('_',"-")
 
     # %%
     inSigPAMs=[]
@@ -388,6 +366,10 @@ if __name__ == "__main__":
     negD1Pathways = pathwiseAddition(negD1)
     fusionPathways= pathwiseAddition(fusions)
 
+    # %%
+    inSigPAMs = list(np.array(inSigPAMs) & np.array(somMutsPathways.mean(axis=1) > params['min_mut_freq']))
+    inAmpGenes = list(np.array(inAmpGenes) & np.array(posD1Pathways.mean(axis=1) > params['min_mut_freq']))
+    inDelGenes = list(np.array(inDelGenes) & np.array(negD1Pathways.mean(axis=1) > params['min_mut_freq']))
     # %%
     somMutsPathways.index = somMutsPathways.index.astype(int)
     posD1Pathways.index = posD1Pathways.index.astype(int)
@@ -482,7 +464,7 @@ if __name__ == "__main__":
 
     # %%
     print('Generating CNA summaryMatrix data...')
-    somMuts1 = list(set(list(ampGenes.keys())+list(delGenes.keys())).intersection(list(set(list(posD1.index)) | set(list(negD1.index)))))
+    somMuts1 = list(set(list(ampGenes.keys())+list(delGenes.keys())).intersection(list(set(list(posD1.index)) | set(list(negD1.index)) | set(list(d1.index)))))
     delGenesSet = set(delGenes.keys())
     ampGenesSet = set(ampGenes.keys())
     bothGenesSet = (ampGenesSet.intersection(delGenesSet)).intersection(somMuts1)
@@ -507,14 +489,14 @@ if __name__ == "__main__":
             pbar.update(1)
         # Straight up deletion
         for del1 in onlyDel:
-            if (both1 < 1000000000):
+            if (del1 < 1000000000):
                 summaryMatrix.loc[del1,['CNA_type','CNA_locus','GISTIC_residual_q_value','CNA_freq']] = ['Del', delGenes[del1], delLoci_qv[delGenes[del1]], negFreq[del1]]
             else:
                 summaryMatrix.loc[del1,['CNA_type','CNA_freq']] = ['Del', negFreq[del1]]
             pbar.update(1)
         # Straight up amplification
         for amp1 in onlyAmp:
-            if (both1 < 1000000000):
+            if (amp1 < 1000000000):
                 summaryMatrix.loc[amp1,['CNA_type','CNA_locus','GISTIC_residual_q_value','CNA_freq']] = ['Amp', ampGenes[amp1], ampLoci_qv[ampGenes[amp1]], posFreq[amp1]]
             else: 
                 summaryMatrix.loc[amp1,['CNA_type','CNA_freq']] = ['Amp', posFreq[amp1]]
@@ -528,20 +510,22 @@ if __name__ == "__main__":
     for loci1 in ampLoci:
         # Get matrix of CNAs for genes in loci
         dt = posD1.loc[list(set(posD1.index).intersection(ampLoci[loci1]))]
+        dt = dt[dt.columns.difference(blacklist)]
         # Get unique rows
-        dedup = dt.drop_duplicates(keep='first')
+        dedup = dt.drop_duplicates(keep='first', ignore_index=True)
         # Get genes which match and add to output dictionaries
         for i in range(len(dedup.index)):
             cnaName = loci1+'_'+str(i)+'_CNAamp'
             lociCNA.loc[cnaName] = dedup.iloc[i]
             lociCNAgenes[cnaName] = [j for j in dt.index if dedup.iloc[i].equals(dt.loc[j])]
-
+# %%
     print('Bundling deletion loci...')
     for loci1 in delLoci:
         # Get matrix of CNAs for genes in loci
         dt = negD1.loc[list(set(posD1.index).intersection(delLoci[loci1]))]
+        dt = dt[dt.columns.difference(blacklist)]
         # Get unique rows
-        dedup = dt.drop_duplicates(keep='first')
+        dedup = dt.drop_duplicates(keep='first', ignore_index=True)
         # Get genes which match and add to output dictionaries
         for i in range(len(dedup.index)):
             cnaName = loci1+'_'+str(i)+'_CNAdel'
@@ -599,7 +583,7 @@ if __name__ == "__main__":
 # %%
     print('Starting amplifications...')
     for loci1 in ampLoci:
-        for s1 in  set(ampLoci[loci1]).intersection(set(list(somMuts.index))):
+        for s1 in  set(ampLoci[loci1]).intersection(somMuts.index):
             if s1>0:
                 # If potential Act
                 if s1 in somMuts.index and s1 in posD1.index:
@@ -610,9 +594,9 @@ if __name__ == "__main__":
                         tmpSom = tmpSom.add(tmpFusion)
                         tmpSom[tmpSom > 1] = 1
                     tmpNeg = negD1.loc[s1]
-                    tmpLoF = tmpSom.add(tmpNeg)[tmpNeg.index].clip(0,1)
+                    tmpLoF = (tmpSom.add(tmpNeg)[tmpNeg.index]).clip(0,1)
                     tmpPos = posD1.loc[s1]
-                    tmpAct = tmpSom.add(tmpPos)[tmpPos.index].clip(0,1)
+                    tmpAct = (tmpSom.add(tmpPos)[tmpPos.index]).clip(0,1)
                     if not s1 in freq:
                         if params['fusions_file'] == 'none':
                             freq[str(s1)] = {'PAM':tmpSomMean,'Fusion':tmpFusion[tmpFusion.index.difference(blacklist)].mean(),'CNAdel':tmpNeg[tmpNeg.index.difference(blacklist)].mean(),'CNAamp':tmpPos[tmpPos.index.difference(blacklist)].mean(),'LoF':tmpLoF[tmpLoF.index.difference(blacklist)].mean(),'Act':tmpAct[tmpAct.index.difference(blacklist)].mean()}
@@ -621,10 +605,12 @@ if __name__ == "__main__":
                     # Store Act
                     if not str(s1) in pamLofAct:
                         pamLofAct[str(s1)] = {}
-                    if not (str(s1)+'_Act' in pamLofAct[str(s1)] or tmpAct.sum() == tmpSom.sum() or tmpAct.sum() == tmpPos.sum()):
+                    if not (str(s1)+'_Act' in pamLofAct[str(s1)] or tmpAct[tmpAct.index.difference(blacklist)].sum() == tmpSom[tmpSom.index.difference(blacklist)].sum() or tmpAct[tmpAct.index.difference(blacklist)].sum() == tmpPos[tmpPos.index.difference(blacklist)].sum()):
                         pamLofAct[str(s1)][str(s1)+'_Act'] = tmpAct
                         pamLofAct[str(s1)][str(s1)+'_CNAamp'] = tmpPos
-        for s1 in set(ampLoci[loci1]).difference(set(list(somMuts.index))):
+                    elif not (str(s1)+'_CNAamp' in pamLofAct[str(s1)] or tmpAct[tmpAct.index.difference(blacklist)].sum() == tmpSom[tmpSom.index.difference(blacklist)].sum()): 
+                        pamLofAct[str(s1)][str(s1)+'_CNAamp'] = tmpPos
+        for s1 in set(ampLoci[loci1]).difference(somMuts.index):
             if s1>0:
                 tmpNeg = negD1.loc[s1]
                 tmpPos = posD1.loc[s1]
@@ -641,7 +627,7 @@ if __name__ == "__main__":
     # %%
     print('Starting deletions...')
     for loci1 in delLoci:
-        for s1 in set(delLoci[loci1]).intersection(set(list(somMuts.index))):
+        for s1 in set(delLoci[loci1]).intersection(somMuts.index):
             if s1>0:
                 # If potential Lof
                 if s1 in somMuts.index and s1 in negD1.index:
@@ -665,10 +651,12 @@ if __name__ == "__main__":
                     # Store LoF
                     if not str(s1) in pamLofAct:
                         pamLofAct[str(s1)] = {}
-                    if not (str(s1)+'_LoF' in pamLofAct[str(s1)] or tmpLoF.sum() == tmpSom.sum() or tmpLoF.sum() == tmpNeg.sum()):
+                    if not (str(s1)+'_LoF' in pamLofAct[str(s1)] or tmpLoF[tmpLoF.index.difference(blacklist)].sum() == tmpSom[tmpSom.index.difference(blacklist)].sum() or tmpLoF[tmpLoF.index.difference(blacklist)].sum() == tmpNeg[tmpNeg.index.difference(blacklist)].sum()):
                         pamLofAct[str(s1)][str(s1)+'_LoF'] = tmpLoF
                         pamLofAct[str(s1)][str(s1)+'_CNAdel'] = tmpNeg
-        for s1 in set(delLoci[loci1]).difference(set(list(somMuts.index))):
+                    elif not (str(s1)+'_CNAdel' in pamLofAct[str(s1)] or tmpLoF[tmpLoF.index.difference(blacklist)].sum() == tmpSom[tmpSom.index.difference(blacklist)].sum()): 
+                        pamLofAct[str(s1)][str(s1)+'_CNAdel'] = tmpNeg
+        for s1 in set(delLoci[loci1]).difference(somMuts.index):
             if s1>0:
                 tmpNeg = negD1.loc[s1]
                 tmpPos = posD1.loc[s1]
@@ -726,14 +714,12 @@ if __name__ == "__main__":
                     keepFusion.append(str(s1)+'_Fusion')
                     summaryMatrix.loc[int(s1),'OM_type_selected'] = 'Fusion'
             # Add Act
-            print(str(s1)+'_Act' in pamLofAct[str(s1)])
             if str(s1)+'_Act' in pamLofAct[str(s1)] and freqAct>freqPAM and freqAct>=params['min_mut_freq'] and freqAct>freqLoF:
                 if freqPAM>=params['min_pam_freq']:
                     keepers[str(s1)+'_Act'] = pamLofAct[str(s1)][str(s1)+'_Act']
                     calcSig.append(str(s1)+'_Act')
                     summaryMatrix.loc[int(s1),'OM_type_selected'] = 'Act'
             # Add LoF
-            print(str(s1)+'_LoF' in pamLofAct[str(s1)])
             if str(s1)+'_LoF' in pamLofAct[str(s1)] and freqLoF>freqPAM and freqLoF>=params['min_mut_freq'] and freqLoF>freqAct:
                 if freqPAM>=params['min_pam_freq']:
                     keepers[str(s1)+'_LoF'] = pamLofAct[str(s1)][str(s1)+'_LoF']
@@ -768,10 +754,10 @@ if __name__ == "__main__":
         if type(somFusionMF)!=str:
             tmp3 = somFusionMF.loc[np.random.choice(somFusionMF.index, 1)].sum()
             temp = (tmp1 + tmp2 + tmp3).clip(0,1)
-            perms = (temp.sum())/somMutsMF.shape[1]
+            perms = temp.mean()
         else:
             temp = (tmp1 + tmp2 ).clip(0,1)
-            perms = (temp.sum())/somMutsMF.shape[1]
+            perms = temp.mean()
         return perms        
     # %%
     permMF_neg = []
@@ -871,26 +857,26 @@ if __name__ == "__main__":
     pathways["PathwayID"].index = pathways.index
     # %%
     with tqdm(total=len(oMfreqs)) as pbar:
-        for f in oMfreqs:
+        for f in oMfreqs.keys():
             if int(f.split('_')[0])<1000000000:
-                permdict1['LoF'][oMfreqs[f]] = float(len([i for i in permMF_neg if i >= oMfreqs[f]]))/len(permMF_neg)
-                permdict1['Act'][oMfreqs[f]] = float(len([i for i in permMF_pos if i >= oMfreqs[f]]))/len(permMF_pos)
+                permdict1['LoF'][f] = float(len([i for i in permMF_neg if i >= oMfreqs[f]]))/len(permMF_neg)
+                permdict1['Act'][f] = float(len([i for i in permMF_pos if i >= oMfreqs[f]]))/len(permMF_pos)
             else:
                 perm_neg = permPath_neg[str(pathways.loc[pathways["PathwayID"] == int(f.split('_')[0]), 'length'].iloc[0])]
                 perm_pos = permPath_pos[str(pathways.loc[pathways["PathwayID"] == int(f.split('_')[0]), 'length'].iloc[0])]
-                permdict1['LoF'][oMfreqs[f]] = float(len([i for i in perm_neg if i >= oMfreqs[f]]))/len(perm_neg)
-                permdict1['Act'][oMfreqs[f]] = float(len([i for i in perm_pos if i >= oMfreqs[f]]))/len(perm_pos)
+                permdict1['LoF'][f] = float(len([i for i in perm_neg if i >= oMfreqs[f]]))/len(perm_neg)
+                permdict1['Act'][f] = float(len([i for i in perm_pos if i >= oMfreqs[f]]))/len(perm_pos)
             pbar.update(1)
 
     # %%
     # Add permuted p-values to summary matrix and permutation summary
     for sig1 in calcSig:
         if sig1.find('LoF')>0:
-            lofActSig.loc[sig1, 'Emp.p_value'] = permdict1['LoF'][freq[sig1.rstrip('_LoF')]['LoF']]
-            summaryMatrix.loc[int(sig1.rstrip('_LoF')),'OM_empirical_p_value'] = permdict1['LoF'][freq[sig1.rstrip('_LoF')]['LoF']]
+            lofActSig.loc[sig1, 'Emp.p_value'] = permdict1['LoF'][sig1]
+            summaryMatrix.loc[int(sig1.rstrip('_LoF')),'OM_empirical_p_value'] = permdict1['LoF'][sig1]
         elif sig1.find('Act')>0:
-            lofActSig.loc[sig1, 'Emp.p_value'] = permdict1['Act'][freq[sig1.rstrip('_Act')]['Act']]
-            summaryMatrix.loc[int(sig1.rstrip('_Act')),'OM_empirical_p_value'] = permdict1['Act'][freq[sig1.rstrip('_Act')]['Act']]
+            lofActSig.loc[sig1, 'Emp.p_value'] = permdict1['Act'][sig1]
+            summaryMatrix.loc[int(sig1.rstrip('_Act')),'OM_empirical_p_value'] = permdict1['Act'][sig1]
     # %%
     # Filter LoF and Act based on permuted p-values
     lofActSig["q_value"]=np.empty((lofActSig.shape[0],1))
@@ -905,7 +891,8 @@ if __name__ == "__main__":
         # No LoF or Act to filter
         lofActSig.to_csv(params['output_path']+'/oncoMerge_ActLofPermPV.csv')
         keepLofAct0 = []
-
+    # %%
+    prin()
     # Function to map mutation to locus
     def findLoci(mutation, ampLoci, delLoci):
         gene, mutType = mutation.split('_')
@@ -917,15 +904,17 @@ if __name__ == "__main__":
 
     # Tabulate the number of genes per locus Lof Act
     lofActLoci = {}
+    # %%
     for mut in keepLofAct0:
         mutLoci = findLoci(mut, ampLoci, delLoci)
         for locus1 in mutLoci:
             if locus1 not in lofActLoci.keys():
                 lofActLoci[locus1] = []
             lofActLoci[locus1].append(mut)
-
+    # %%
     # Tabulate the number of genes per locus CNAs
-    combinedLoci = lofActLoci
+    combinedLoci = lofActLoci.copy()
+    # %%
     for mut in keepDel+keepAmp:
         mutLoci = findLoci(mut, ampLoci, delLoci)
         for locus1 in mutLoci:
@@ -933,7 +922,7 @@ if __name__ == "__main__":
                 if locus1 not in combinedLoci.keys():
                     combinedLoci[locus1] = []
                 combinedLoci[locus1].append(mut)
-
+    # %%
     ## Decide whether to apply the maximum final frequency filter
     keepLofAct1 = []
     for locus in combinedLoci.keys():
@@ -951,12 +940,13 @@ if __name__ == "__main__":
                 summaryMatrix.loc[int(gene), 'Genes_in_locus'] = len(combinedLoci[locus])
         # Filter with maximum final frequency filter
         else:
-            maxFF = max([summaryMatrix.loc[int(mut.split('_')[0]), mut.split('_')[1]+'_freq'] for mut in combinedLoci[locus]])
-            gl1 = len([mut for mut in combinedLoci[locus] if summaryMatrix.loc[int(mut.split('_')[0]), mut.split('_')[1]+'_freq']==maxFF])
+            LociFF = [summaryMatrix.loc[int(mut.split('_')[0]), mut.split('_')[1]+'_freq'] if (mut.split('_')[1]=='Act' or mut.split('_')[1]=='LoF') else summaryMatrix.loc[int(mut.split('_')[0]), 'CNA_freq'] for mut in combinedLoci[locus]]
+            maxFF = max(LociFF)
+            gl1 = pd.Series(np.array(LociFF) == maxFF).sum()
             for mut in combinedLoci[locus]:
                 gene, mutType = mut.split('_')
-                if summaryMatrix.loc[int(gene), mutType+'_freq']==maxFF:
-                    keepLofAct1.append(mut)
+                keepLofAct1.append(mut)
+                if ((mutType=='Act' or mutType=='LoF') and (summaryMatrix.loc[int(gene), mutType+'_freq']==maxFF)) or summaryMatrix.loc[int(gene), 'CNA_freq']==maxFF:
                     summaryMatrix.loc[int(gene), 'Genes_in_locus'] = gl1
                     summaryMatrix.loc[int(gene), 'Final_mutation_type'] = mutType
                     if mutType=='Act' or mutType=='LoF':
@@ -966,7 +956,7 @@ if __name__ == "__main__":
                         summaryMatrix.loc[int(gene), 'Final_freq'] = summaryMatrix.loc[int(gene), 'CNA_freq']
 
     keepLofAct = list(set(keepLofAct1))
-
+    # %%
     # Screen out PAMs that are LoF/Act
     newKeepPAM = []
     for pam1 in keepPAM:
@@ -997,20 +987,22 @@ if __name__ == "__main__":
     ## Screen out loci that have a representative gene
     # Mutations that are at or above minimum mutation frequency cutoff
     highFreqLoci = lociCNA.loc[lociCNA.mean(axis=1)>=params['min_mut_freq']]
-
+    highFreqLoci = highFreqLoci[~highFreqLoci.index.str.split('_').str[0].isin(pathways["Pathway"])]
+    # %%
     # Figure out what loci are explained by current Act or LoF genes
     explainedLoc = []
+    keepLoc = []
+    AmpDelLoci = {**ampLoci, **delLoci}
+    # %%
     for locus1 in highFreqLoci.index:
         genesInLocus = [i for i in lociCNAgenes[locus1] if (str(i)+'_Act' in keepLofAct or str(i)+'_LoF' in keepLofAct or str(i)+'_CNAamp' in keepLofAct or str(i)+'_CNAdel' in keepLofAct)]
-        if len(genesInLocus)>0:
+        ActLoFInLocus = [i for i in AmpDelLoci[locus1.split('_')[0]] if (str(i)+'_Act' in keepLofAct or str(i)+'_LoF' in keepLofAct)]
+        if (len(genesInLocus)>0 or len(ActLoFInLocus))>0:
             explainedLoc.append(locus1.split('_')[0])
-
-    # Screen out all other loci in that region
-    keepLoc = []
-    for locus1 in highFreqLoci.index:
-        if not locus1.split('_')[0] in explainedLoc:
+        else:
             keepLoc.append(locus1)
-
+            
+    # %%
     keepLoc_dict = {}
     for locus1 in set(['_'.join([i.split('_')[0],i.split('_')[-1]]) for i in keepLoc]):
         locus2 = locus1.split('_')[0]
@@ -1042,7 +1034,7 @@ if __name__ == "__main__":
     ## Compile OncoMerge output files ##
     ####################################
     finalMutFile = pd.concat([pd.DataFrame(keepers).transpose().loc[newKeepPAM].sort_index(), pd.DataFrame(keepers).transpose().loc[keepLofAct].sort_index(), keepLoc_df.sort_index()], sort=True)
-
+    # %%
     # Rename all loci with only one gene
     ind_list = finalMutFile.index.tolist()
     for locus1 in keepLoc_df.index:
@@ -1064,20 +1056,64 @@ if __name__ == "__main__":
     ####################################
     ## ME Analysis                    ##
     ####################################
+    print("Starting Mutual Exclusivity Analysis...")
     import rpy2
-    import rpy2.robjects as robjects
+    import rpy2.robjects as ro
     from rpy2.robjects.vectors import DataFrame
-    from rpy2.robjects.packages import importr, data
-    r = robjects.r
-    r['source']('MEanalysis.R')
-    filter_country_function_r = robjects.globalenv['MEanalysis']
-    MEmuts = finalMutFile.copy()
-    MEmuts_ind = np.array(finalMutFile.index.str.split('_').str[0])
-    ME
+    from rpy2.robjects import pandas2ri
+    from rpy2.robjects.conversion import localconverter
 
-
-
-
+    ro.r('''
+        # create a function `f`
+        MEanalysis <- function(somMuts, pathways){
+            library("Rediscover")
+            library("tidyverse")
+            library("discover")
+            out = data.frame(names=character(), ME_pvalues=double())
+            if (nrow(pathways) > 0){
+                for (row in 1:nrow(pathways)) {
+                if (nchar(pathways[row, "Somatically_Mutated_Genes"])>2){
+                    genes <-as.vector(strsplit(substring(pathways[row, "Somatically_Mutated_Genes"], 2,nchar(pathways[row, "Somatically_Mutated_Genes"])-1), ", "))[[1]]
+                    A = data.matrix(somMuts)
+                    PM <- getPM(A)
+                    x= data.frame(rownames(somMuts))
+                    x$indices = rownames(x)
+                    p_val = getMutexGroup(data.matrix(A[genes,]), PM[as.numeric(c(filter(x, rownames.somMuts. %in% genes)$indices)),], "Coverage")
+                    out[nrow(out) + 1,] = c(pathways[row, "Pathway_Name"], p_val)
+                }
+                }
+            }
+            return(out)
+            }
+        ''')
+    MEanalysis_r = ro.globalenv['MEanalysis']
+    MEmuts = somMuts.copy().astype(int)
+    #with localconverter(ro.default_converter + pandas2ri.converter):
+    #    MEmuts_r = ro.conversion.py2rpy(MEmuts)
+    #print("Converted Somatic Mutations.")
+    # %%
+    MEpathways = summaryMatrix.copy()
+    MEpathways = MEpathways.loc[MEpathways["Pathway_Length"]>1,]
+    MEpathways = MEpathways.loc[~MEpathways["OM_empirical_p_value"].isna(),]
+    MEpathways = MEpathways.loc[MEpathways["OM_empirical_p_value"]<0.05,]
+    MEpathways = MEpathways.loc[:,["Somatically_Mutated_Genes", "Pathway_Name"]]
+    MEpathways["Somatically_Mutated_Genes"] = MEpathways["Somatically_Mutated_Genes"].astype(str)
+    #with localconverter(ro.default_converter + pandas2ri.converter):
+    #    pathways_r = ro.conversion.py2rpy(MEpathways)
+    #print("Converted Pathways.")
+    with localconverter(ro.default_converter + pandas2ri.converter):
+        MEpathways_r = ro.conversion.py2rpy(MEpathways)
+        MEmuts_r = ro.conversion.py2rpy(MEmuts)
+    print("Finished Converting")
+    MEpvals_r = MEanalysis_r(MEmuts_r, MEpathways_r)
+    print("Finished Running Analysis.")
+    # %%
+    with localconverter(ro.default_converter + pandas2ri.converter):
+        MEpvals = ro.conversion.rpy2py(MEpvals_r)
+    
+    # %%
+    summaryMatrix = summaryMatrix.merge(MEpvals, how="left", left_on="Pathway_Name", right_on="names")
+    summaryMatrix = summaryMatrix.drop("names", axis = 1)
     # %%
     ####################################
     ## Compile OncoMerge output files ##
