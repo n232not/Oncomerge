@@ -99,7 +99,7 @@ if __name__ == "__main__":
     #######################
 
     params = args.__dict__
-    params['fusions_file'] = 'C:/Users/nihan/Dropbox/OncoMerge_pathways/TCGA/FUSIONS/BRCA_fusions.csv'
+    #params['fusions_file'] = 'C:/Users/nihan/Dropbox/OncoMerge_pathways/TCGA/FUSIONS/BRCA_fusions.csv'
     if args.config_file:
         with open(args.config_file, "r") as cfg:
             tmp = json.loads(cfg.read())
