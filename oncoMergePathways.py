@@ -59,7 +59,7 @@ parser.add_argument('-pam', '--pam_file', help='Path to the protein affecting mu
 parser.add_argument('-mscv', '--mutsig2cv_file', help='Path to a MutSig2CV output file', type = str, default='C:/Users/nihan/Dropbox/OncoMerge_pathways/TCGA/MutSig2cv/BRCA_sig2cv.csv')
 parser.add_argument('-op', '--output_path', help='Path you would like to output OncoMerged files (default = current directory)', type = str, default = '.')
 parser.add_argument('-fus', '--fusions_file', help='Path to the gene fusions file (CSV matrix where columns are patients and genes are rows) [0 = not fused, and 1 = fused]', type = str, default='C:/Users/nihan/Dropbox/OncoMerge_pathways/TCGA/FUSIONS/BRCA_fusions.csv')
-parser.add_argument('-mmf', '--min_mut_freq', help='Minimum frequency of mutation (range = 0-1; default = 0.04)', type = float, default = 0.04)
+parser.add_argument('-mmf', '--min_mut_freq', help='Minimum frequency of mutation (range = 0-1; default = 0.05)', type = float, default = 0.05)
 parser.add_argument('-pq', '--perm_qv', help='Permuted p-value FDR BH corrected cutoff (default = 0.1)', type = float, default = 0.1)
 parser.add_argument('-sp', '--save_permutation', help='Run and save out permutation analysis to be used for comparability in another OncoMerge run (default off)', action='store_true')
 parser.add_argument('-lp', '--load_permutation', help='Do not run permutation anlaysis and load permutation anlaysis from previous run (default off)', type = str, default = None)
@@ -75,18 +75,18 @@ args = parser.parse_args()
 def pathwayPool(i):
     perms = []
     
-    tmp1 = [i[1].loc[np.random.choice(i[1].index, i[0])].sum().clip(0,1) for j in range(i[4])]
-    tmp2 = [i[3].loc[np.random.choice(i[3].index, i[0])].sum().clip(0,1) for j in range(i[4])]
-    if type(i[5])!=str:
-        tmp3 = [i[2].loc[np.random.choice(i[2].index, i[0])].sum().clip(0,1) for j in range(i[4])]
+    tmp1 = [i[1].loc[np.random.choice(i[1].index, i[0])].sum(axis=0) for j in range(i[4])]
+    tmp2 = [i[3].loc[np.random.choice(i[3].index, i[0])].sum(axis=0) for j in range(i[4])]
+    if type(i[2])!=str:
+        tmp3 = [i[2].loc[np.random.choice(i[2].index, i[0])].sum(axis=0) for j in range(i[4])]
         temp = []
         for j in range(i[4]): 
-            temp.append((tmp1[j] + tmp2[j] + tmp3[j]).mean())
+            temp.append((tmp1[j] + tmp2[j] + tmp3[j]).clip(0,1).mean())
         perms = [str(i[0]), temp]
     else:
         temp = []
-        for j in range(i[4]): 
-            temp.append((tmp1[j] + tmp2[j]).mean())
+        for j in range(i[4]):
+            temp.append((tmp1[j] + tmp2[j]).clip(0,1).mean())
         perms = [str(i[0]), temp]
     return perms
 #%%
@@ -353,7 +353,7 @@ if __name__ == "__main__":
     def pathwiseAddition(origDf): 
         indices = set(origDf.index)
         genes = pathways['Genes'].map(set)
-        rows= [pd.DataFrame(origDf.loc[list((indices & i))].sum()) for i in genes]
+        rows= [pd.DataFrame(origDf.loc[list((indices & i))].sum(axis=0)) for i in genes]
         return pd.concat(rows,axis=1).T.set_index(pathways['PathwayID']).clip(0,1)
 
     # Include pathway name when sum
@@ -749,14 +749,14 @@ if __name__ == "__main__":
     # Permute to get frequency
     def singlePermute(somMutsMF, somFusionMF, somCNAsMF):
         perms = []
-        tmp1 = somMutsMF.loc[np.random.choice(somMutsMF.index, 1)].sum()
-        tmp2 = somCNAsMF.loc[np.random.choice(somCNAsMF.index, 1)].sum()
+        tmp1 = somMutsMF.loc[np.random.choice(somMutsMF.index, 1)]
+        tmp2 = somCNAsMF.loc[np.random.choice(somCNAsMF.index, 1)]
         if type(somFusionMF)!=str:
-            tmp3 = somFusionMF.loc[np.random.choice(somFusionMF.index, 1)].sum()
+            tmp3 = somFusionMF.loc[np.random.choice(somFusionMF.index, 1)]
             temp = (tmp1 + tmp2 + tmp3).clip(0,1)
             perms = temp.mean()
         else:
-            temp = (tmp1 + tmp2 ).clip(0,1)
+            temp = (tmp1 + tmp2).clip(0,1)
             perms = temp.mean()
         return perms        
     # %%
@@ -766,7 +766,7 @@ if __name__ == "__main__":
         ## Compute permutations if not loading from previous run
         # Deletions
         print('\tPermuting deletions...')
-        permutedGenes = (set(sigPAMs) | ampGenesSet | delGenesSet) & set(list(posD1.index)) & set(list(negD1.index))
+        permutedGenes = (set(sigPAMs) | ampGenesSet | delGenesSet) & set(list(posD1.index)) & set(list(negD1.index)) & set(somMuts.index)
         if not params['fusions_file'] == 'none':
             permutedGenes = permutedGenes & set(fusions.index)
         permutedGenes = np.array(list(permutedGenes))
@@ -827,7 +827,7 @@ if __name__ == "__main__":
     # Pathway Permutations
     def singlePathwayPermute(somMuts, somFusions, somCNAs, numPermutes):
         with Pool(processes=7) as p: 
-            permuts =  list(tqdm(p.imap(pathwayPool, [[i, somMuts, somFusions, somCNAs, numPermutes, somFusionMF] for i in pathways["length"].unique()]), total=len(pathways["length"].unique())))
+            permuts =  list(tqdm(p.imap(pathwayPool, [[i, somMuts, somFusionMF, somCNAs, numPermutes] for i in pathways["length"].unique()]), total=len(pathways["length"].unique())))
         perm = dict()
         for i in permuts:
             perm[i[0]] = i[1]
@@ -892,7 +892,6 @@ if __name__ == "__main__":
         lofActSig.to_csv(params['output_path']+'/oncoMerge_ActLofPermPV.csv')
         keepLofAct0 = []
     # %%
-    prin()
     # Function to map mutation to locus
     def findLoci(mutation, ampLoci, delLoci):
         gene, mutType = mutation.split('_')
@@ -1065,20 +1064,38 @@ if __name__ == "__main__":
 
     ro.r('''
         # create a function `f`
-        MEanalysis <- function(somMuts, pathways){
+        MEanalysis <- function(somMuts, posD1, negD1, Act, LoF, pathways){
+            Act<-Act
+            LoF<-LoF
             library("Rediscover")
             library("tidyverse")
             library("discover")
             out = data.frame(names=character(), ME_pvalues=double())
             if (nrow(pathways) > 0){
                 for (row in 1:nrow(pathways)) {
+                if (pathways[row, "Final_mutation_type"] == "PAM"){
+                    muts = somMuts
+                }
+                if (pathways[row, "Final_mutation_type"] == "CNAamp"){
+                    muts = posD1
+                }
+                if (pathways[row, "Final_mutation_type"] == "CNADel"){
+                    muts = negD1
+                }
+                if (pathways[row, "Final_mutation_type"] == "Act"){
+                    muts = Act
+                }
+                if (pathways[row, "Final_mutation_type"] == "LoF"){
+                    muts = LoF
+                }
                 if (nchar(pathways[row, "Somatically_Mutated_Genes"])>2){
                     genes <-as.vector(strsplit(substring(pathways[row, "Somatically_Mutated_Genes"], 2,nchar(pathways[row, "Somatically_Mutated_Genes"])-1), ", "))[[1]]
-                    A = data.matrix(somMuts)
+                    genes <- genes[genes %in% rownames(muts)]
+                    A = data.matrix(muts)
                     PM <- getPM(A)
-                    x= data.frame(rownames(somMuts))
+                    x= data.frame(rownames(muts))
                     x$indices = rownames(x)
-                    p_val = getMutexGroup(data.matrix(A[genes,]), PM[as.numeric(c(filter(x, rownames.somMuts. %in% genes)$indices)),], "Coverage")
+                    p_val = getMutexGroup(data.matrix(A[genes,]), PM[as.numeric(c(filter(x, rownames.muts. %in% genes)$indices)),], "Coverage")
                     out[nrow(out) + 1,] = c(pathways[row, "Pathway_Name"], p_val)
                 }
                 }
@@ -1088,6 +1105,10 @@ if __name__ == "__main__":
         ''')
     MEanalysis_r = ro.globalenv['MEanalysis']
     MEmuts = somMuts.copy().astype(int)
+    MEpos = posD1.copy().astype(int)
+    MEneg = negD1.copy().astype(int)
+    MEact = (somMuts.loc[list(set(somMuts.index).intersection(set(posD1.index))),:] + posD1.loc[list(set(somMuts.index).intersection(set(posD1.index))),:]).clip(0,1).astype(int)
+    MElof = (somMuts.loc[list(set(somMuts.index).intersection(set(negD1.index))),:] + negD1.loc[list(set(somMuts.index).intersection(set(negD1.index))),:]).clip(0,1).astype(int)
     #with localconverter(ro.default_converter + pandas2ri.converter):
     #    MEmuts_r = ro.conversion.py2rpy(MEmuts)
     #print("Converted Somatic Mutations.")
@@ -1095,25 +1116,34 @@ if __name__ == "__main__":
     MEpathways = summaryMatrix.copy()
     MEpathways = MEpathways.loc[MEpathways["Pathway_Length"]>1,]
     MEpathways = MEpathways.loc[~MEpathways["OM_empirical_p_value"].isna(),]
-    MEpathways = MEpathways.loc[MEpathways["OM_empirical_p_value"]<0.05,]
-    MEpathways = MEpathways.loc[:,["Somatically_Mutated_Genes", "Pathway_Name"]]
+    MEpathways = MEpathways.loc[MEpathways["OM_empirical_p_value"]<0.01]
+    MEpathways = MEpathways.loc[~MEpathways["Final_mutation_type"].isna(),]
+    MEpathways = MEpathways.loc[MEpathways["Final_mutation_type"] != "",] 
+    MEpathways = MEpathways.loc[:,["Somatically_Mutated_Genes", "Pathway_Name", "Final_mutation_type"]]
     MEpathways["Somatically_Mutated_Genes"] = MEpathways["Somatically_Mutated_Genes"].astype(str)
     #with localconverter(ro.default_converter + pandas2ri.converter):
     #    pathways_r = ro.conversion.py2rpy(MEpathways)
     #print("Converted Pathways.")
+    # %%
     with localconverter(ro.default_converter + pandas2ri.converter):
         MEpathways_r = ro.conversion.py2rpy(MEpathways)
         MEmuts_r = ro.conversion.py2rpy(MEmuts)
-    print("Finished Converting")
-    MEpvals_r = MEanalysis_r(MEmuts_r, MEpathways_r)
-    print("Finished Running Analysis.")
+        MEpos_r = ro.conversion.py2rpy(MEpos)
+        MEneg_r = ro.conversion.py2rpy(MEneg)
+        MEact_r = ro.conversion.py2rpy(MEact)
+        MElof_r = ro.conversion.py2rpy(MElof)
     # %%
+    print("Finished Converting")
+    MEpvals_r = MEanalysis_r(MEmuts_r, MEpos_r, MEneg_r, MEact_r, MElof_r, MEpathways_r)
+    #MEpvals_r = MEanalysis_r(MEact_r, MElof_r, MEpathways_r)
+    print("Finished Running Analysis.")
     with localconverter(ro.default_converter + pandas2ri.converter):
         MEpvals = ro.conversion.rpy2py(MEpvals_r)
-    
     # %%
+    summaryMatrixInd = summaryMatrix.index
     summaryMatrix = summaryMatrix.merge(MEpvals, how="left", left_on="Pathway_Name", right_on="names")
     summaryMatrix = summaryMatrix.drop("names", axis = 1)
+    summaryMatrix.index = summaryMatrixInd
     # %%
     ####################################
     ## Compile OncoMerge output files ##
