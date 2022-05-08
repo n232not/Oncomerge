@@ -1,0 +1,974 @@
+,Symbol,Type,Freq,Emp.p_value,q_value
+1000009068_Act,kegg::MAPK signaling pathway - Homo sapiens (human),Act,0.525,0.0,0.0
+1000002717_Act,GO::negative regulation of transcription by RNA polymerase II,Act,0.625,0.0,0.0
+1000004726_Act,GO::G protein-coupled receptor signaling pathway,Act,0.58125,0.0,0.0
+1000002551_Act,GO::positive regulation of GTPase activity,Act,0.59375,0.0,0.0
+1000004873_Act,GO::regulation of transcription by RNA polymerase II,Act,0.65625,0.0,0.0
+1000006152_Act,GO::positive regulation of transcription by RNA polymerase II,Act,0.7625,0.0,0.0
+1000006831_Act,GO::negative regulation of cell proliferation,Act,0.54375,0.0,0.0
+1000006885_Act,GO::signal transduction,Act,0.65625,0.0,0.0
+1000001596_Act,GO::positive regulation of transcription; DNA-templated,Act,0.575,0.0,0.0
+1000009240_Act,kegg::Human papillomavirus infection - Homo sapiens (human),Act,0.5375,0.0,0.0
+1000009246_Act,kegg::Pathways in cancer - Homo sapiens (human),Act,0.64375,0.0,0.0
+3265_LoF,HRAS,LoF,0.10625,0.0002,0.0006000000000000001
+7343_Act,UBTF,Act,0.0625,0.0108,0.016200000000000003
+405_Act,ARNT,Act,0.05,0.037,0.037
+1000009269_Act,kegg::Central carbon metabolism in cancer - Homo sapiens (human),Act,0.35625,0.001,0.07461538461538463
+1000009179_Act,kegg::Oxytocin signaling pathway - Homo sapiens (human),Act,0.45,0.001,0.07461538461538463
+1000005363_LoF,GO::regulation of neurotransmitter receptor localization to postsynaptic specialization membrane,LoF,0.15625,0.002,0.13857142857142857
+1000009253_Act,kegg::Renal cell carcinoma - Homo sapiens (human),Act,0.34375,0.004,0.2425
+1000000529_Act,GO::positive regulation of cell migration,Act,0.48125,0.004,0.2425
+1000001595_Act,GO::negative regulation of transcription; DNA-templated,Act,0.55,0.005,0.24250000000000002
+1000006634_Act,GO::extracellular matrix organization,Act,0.48125,0.005,0.24250000000000002
+1000001730_LoF,GO::positive regulation of ruffle assembly,LoF,0.18125,0.005,0.24250000000000002
+1000009258_Act,kegg::Thyroid cancer - Homo sapiens (human),Act,0.2875,0.005,0.24250000000000002
+1000007279_Act,GO::MAPK cascade,Act,0.4875,0.006,0.2645454545454546
+1000001335_Act,GO::Ras protein signal transduction,Act,0.33125,0.006,0.2645454545454546
+1000000877_Act,GO::visual learning,Act,0.28125,0.009,0.37956521739130433
+1000009070_Act,kegg::Ras signaling pathway - Homo sapiens (human),Act,0.46875,0.011,0.44458333333333333
+1000002067_Act,GO::cerebral cortex development,Act,0.31875,0.012,0.4656
+1000009250_Act,kegg::Proteoglycans in cancer - Homo sapiens (human),Act,0.45625,0.013,0.485
+1000007022_Act,GO::positive regulation of actin cytoskeleton reorganization,Act,0.18125,0.022,0.5471794871794871
+1000009261_Act,kegg::Bladder cancer - Homo sapiens (human),Act,0.25,0.02,0.5471794871794871
+1000009081_Act,kegg::Sphingolipid signaling pathway - Homo sapiens (human),Act,0.375,0.02,0.5471794871794871
+1000006673_Act,GO::response to hypoxia,Act,0.41875,0.019,0.5471794871794871
+1000006242_Act,GO::positive regulation of Ras protein signal transduction,Act,0.225,0.017,0.5471794871794871
+1000002885_Act,GO::positive regulation of DNA replication,Act,0.21875,0.022,0.5471794871794871
+1000002038_Act,GO::regulation of transcription from RNA polymerase II promoter in response to oxidative stress,Act,0.13125,0.02,0.5471794871794871
+1000009103_Act,kegg::Longevity regulating pathway - multiple species - Homo sapiens (human),Act,0.3,0.019,0.5471794871794871
+1000007444_Act,GO::negative regulation of gene expression,Act,0.45625,0.018,0.5471794871794871
+1000009177_Act,kegg::Thyroid hormone signaling pathway - Homo sapiens (human),Act,0.375,0.021,0.5471794871794871
+1000009265_Act,kegg::Non-small cell lung cancer - Homo sapiens (human),Act,0.3,0.017,0.5471794871794871
+1000009167_Act,kegg::Regulation of actin cytoskeleton - Homo sapiens (human),Act,0.45,0.021,0.5471794871794871
+1000009263_Act,kegg::Acute myeloid leukemia - Homo sapiens (human),Act,0.29375,0.022,0.5471794871794871
+1000009256_Act,kegg::Glioma - Homo sapiens (human),Act,0.31875,0.024,0.5542857142857143
+1000000604_Act,GO::positive regulation of MAPK cascade,Act,0.35,0.024,0.5542857142857143
+1000001970_Act,GO::embryonic placenta development,Act,0.1875,0.023,0.5542857142857143
+1000007244_Act,GO::artery morphogenesis,Act,0.1875,0.026,0.5865116279069766
+1000006906_Act,GO::protein ubiquitination,Act,0.525,0.027,0.5904347826086956
+1000009260_Act,kegg::Melanoma - Homo sapiens (human),Act,0.3125,0.028,0.5904347826086956
+1000001651_Act,GO::protein heterooligomerization,Act,0.3,0.028,0.5904347826086956
+1000009158_Act,kegg::Cholinergic synapse - Homo sapiens (human),Act,0.3625,0.029,0.5985106382978723
+1000005311_Act,GO::negative regulation of MAPK cascade,Act,0.2,0.035,0.6296491228070176
+1000005307_Act,GO::positive regulation of MAP kinase activity,Act,0.28125,0.032,0.6296491228070176
+1000002240_Act,GO::cell adhesion,Act,0.525,0.037,0.6296491228070176
+1000002099_Act,GO::mitotic cell cycle checkpoint,Act,0.2125,0.037,0.6296491228070176
+1000000173_Act,GO::transcription by RNA polymerase I,Act,0.1,0.036,0.6296491228070176
+1000003859_Act,GO::negative regulation of GTPase activity,Act,0.25,0.037,0.6296491228070176
+1000004820_Act,GO::Notch signaling pathway,Act,0.35,0.037,0.6296491228070176
+1000009174_Act,kegg::Melanogenesis - Homo sapiens (human),Act,0.34375,0.033,0.6296491228070176
+1000003460_Act,GO::stimulatory C-type lectin receptor signaling pathway,Act,0.35625,0.034,0.6296491228070176
+1000003576_Act,GO::animal organ morphogenesis,Act,0.31875,0.035,0.6296491228070176
+1000009182_Act,kegg::Renin secretion - Homo sapiens (human),Act,0.2875,0.038,0.6355172413793103
+1000009257_Act,kegg::Prostate cancer - Homo sapiens (human),Act,0.33125,0.046,0.6510958904109589
+1000004915_Act,GO::positive regulation of epithelial cell proliferation,Act,0.2625,0.048,0.6510958904109589
+1000009102_Act,kegg::Longevity regulating pathway - Homo sapiens (human),Act,0.31875,0.041,0.6510958904109589
+1000002464_Act,GO::phosphatidylinositol 3-kinase signaling,Act,0.2125,0.045,0.6510958904109589
+1000008525_Act,GO::camera-type eye morphogenesis,Act,0.16875,0.049,0.6510958904109589
+1000008057_Act,GO::cognition,Act,0.2375,0.049,0.6510958904109589
+1000007195_Act,GO::regulation of GTPase activity,Act,0.29375,0.042,0.6510958904109589
+1000009235_Act,kegg::Hepatitis C - Homo sapiens (human),Act,0.3875,0.047,0.6510958904109589
+1000009112_Act,kegg::Notch signaling pathway - Homo sapiens (human),Act,0.25625,0.043,0.6510958904109589
+1000009262_Act,kegg::Chronic myeloid leukemia - Homo sapiens (human),Act,0.3,0.046,0.6510958904109589
+1000009191_Act,kegg::Cushing syndrome - Homo sapiens (human),Act,0.3875,0.047,0.6510958904109589
+1000009117_Act,kegg::Apelin signaling pathway - Homo sapiens (human),Act,0.38125,0.049,0.6510958904109589
+1000007381_Act,GO::intrinsic apoptotic signaling pathway,Act,0.2,0.043,0.6510958904109589
+1000009169_Act,kegg::Insulin secretion - Homo sapiens (human),Act,0.3125,0.044,0.6510958904109589
+1000009175_Act,kegg::Prolactin signaling pathway - Homo sapiens (human),Act,0.2875,0.043,0.6510958904109589
+1000009190_Act,kegg::AGE-RAGE signaling pathway in diabetic complications - Homo sapiens (human),Act,0.31875,0.055,0.7113333333333333
+1000009121_Act,kegg::Focal adhesion - Homo sapiens (human),Act,0.41875,0.055,0.7113333333333333
+1000009266_Act,kegg::Breast cancer - Homo sapiens (human),Act,0.38125,0.056,0.7147368421052632
+1000004775_Act,GO::negative regulation of polyamine transmembrane transport,Act,0.0625,0.067,0.7470114942528736
+1000006507_Act,GO::regulation of atrial cardiac muscle cell action potential,Act,0.0625,0.067,0.7470114942528736
+1000009115_Act,kegg::Axon guidance - Homo sapiens (human),Act,0.4,0.066,0.7470114942528736
+1000007142_Act,GO::skeletal muscle tissue development,Act,0.24375,0.067,0.7470114942528736
+1000007498_Act,GO::positive regulation of ERK1 and ERK2 cascade,Act,0.425,0.065,0.7470114942528736
+1000008957_Act,GO::negative regulation of osteoclast differentiation,Act,0.16875,0.063,0.7470114942528736
+1000009127_Act,kegg::Signaling pathways regulating pluripotency of stem cells - Homo sapiens (human),Act,0.3625,0.067,0.7470114942528736
+1000006094_Act,GO::wound healing,Act,0.29375,0.066,0.7470114942528736
+1000003104_Act,GO::negative regulation of neuron apoptotic process,Act,0.36875,0.066,0.7470114942528736
+1000008846_LoF,GO::regulation of cysteine-type endopeptidase activity involved in apoptotic process,LoF,0.0875,0.061,0.7470114942528736
+1000002346_Act,GO::metanephros development,Act,0.19375,0.062,0.7470114942528736
+1000003593_Act,GO::long-chain fatty-acyl-CoA metabolic process,Act,0.075,0.09,0.7602702702702703
+1000003665_Act,GO::histone H3-K9 methylation,Act,0.06875,0.397,0.7602702702702703
+1000003673_Act,GO::response to acidic pH,Act,0.08125,0.323,0.7602702702702703
+1000003706_Act,GO::bicellular tight junction assembly,Act,0.1625,0.221,0.7602702702702703
+1000003741_Act,GO::ATP-dependent chromatin remodeling,Act,0.125,0.323,0.7602702702702703
+1000003799_Act,GO::hematopoietic progenitor cell differentiation,Act,0.19375,0.362,0.7602702702702703
+1000003801_Act,GO::negative regulation of axon regeneration,Act,0.0875,0.225,0.7602702702702703
+1000003586_Act,GO::response to type I interferon,Act,0.0625,0.465,0.7602702702702703
+1000002549_Act,GO::endothelial cell migration,Act,0.1375,0.298,0.7602702702702703
+1000003823_Act,GO::calcium ion homeostasis,Act,0.1375,0.207,0.7602702702702703
+1000003867_Act,GO::positive regulation of vascular endothelial growth factor receptor signaling pathway,Act,0.125,0.22,0.7602702702702703
+1000003921_Act,GO::RNA export from nucleus,Act,0.14375,0.446,0.7602702702702703
+1000003923_Act,GO::skeletal muscle fiber development,Act,0.13125,0.237,0.7602702702702703
+1000003936_Act,GO::odontogenesis,Act,0.125,0.42,0.7602702702702703
+1000003949_Act,GO::protein K48-linked ubiquitination,Act,0.16875,0.39,0.7602702702702703
+1000004010_Act,GO::mitotic spindle organization,Act,0.18125,0.219,0.7602702702702703
+1000003810_Act,GO::response to nutrient,Act,0.19375,0.378,0.7602702702702703
+1000003551_Act,GO::protein localization to Golgi apparatus,Act,0.1,0.41,0.7602702702702703
+1000003537_Act,GO::stem cell population maintenance,Act,0.16875,0.362,0.7602702702702703
+1000003523_Act,GO::positive regulation of cell adhesion,Act,0.15625,0.416,0.7602702702702703
+1000003016_Act,GO::endosome organization,Act,0.15625,0.311,0.7602702702702703
+1000003055_Act,GO::embryonic heart tube development,Act,0.10625,0.172,0.7602702702702703
+1000003079_Act,GO::negative regulation of signal transduction,Act,0.14375,0.422,0.7602702702702703
+1000003088_Act,GO::regulation of circadian rhythm,Act,0.1625,0.444,0.7602702702702703
+1000003089_Act,GO::positive regulation of circadian rhythm,Act,0.10625,0.074,0.7602702702702703
+1000003097_Act,GO::positive regulation of peptidyl-tyrosine phosphorylation,Act,0.225,0.417,0.7602702702702703
+1000003210_Act,GO::Sertoli cell development,Act,0.09375,0.127,0.7602702702702703
+1000003302_Act,GO::positive regulation of cell differentiation,Act,0.1875,0.136,0.7602702702702703
+1000003307_Act,GO::negative regulation of fat cell differentiation,Act,0.15625,0.446,0.7602702702702703
+1000003308_Act,GO::regulation of fat cell differentiation,Act,0.075,0.444,0.7602702702702703
+1000003336_Act,GO::neuron apoptotic process,Act,0.1375,0.433,0.7602702702702703
+1000003344_Act,GO::cellular response to nitric oxide,Act,0.1,0.296,0.7602702702702703
+1000003443_Act,GO::positive regulation of protein secretion,Act,0.1375,0.469,0.7602702702702703
+1000003459_Act,GO::pattern recognition receptor signaling pathway,Act,0.08125,0.233,0.7602702702702703
+1000003474_Act,GO::protein deubiquitination involved in ubiquitin-dependent protein catabolic process,Act,0.0625,0.373,0.7602702702702703
+1000004015_Act,GO::regulation of actin cytoskeleton organization,Act,0.20625,0.304,0.7602702702702703
+1000004026_Act,GO::aorta morphogenesis,Act,0.08125,0.4,0.7602702702702703
+1000004066_Act,GO::regulation of Golgi organization,Act,0.0875,0.248,0.7602702702702703
+1000004114_Act,GO::learning,Act,0.24375,0.093,0.7602702702702703
+1000004754_Act,GO::fatty acid metabolic process,Act,0.1875,0.279,0.7602702702702703
+1000004756_Act,GO::acyl-CoA metabolic process,Act,0.125,0.42,0.7602702702702703
+1000000092_Act,GO::mitotic cytokinesis,Act,0.1875,0.252,0.7602702702702703
+1000004792_Act,GO::focal adhesion assembly,Act,0.11875,0.342,0.7602702702702703
+1000004795_Act,GO::actin cytoskeleton reorganization,Act,0.175,0.451,0.7602702702702703
+1000004804_Act,GO::response to ethanol,Act,0.25,0.344,0.7602702702702703
+1000004819_Act,GO::neuropeptide signaling pathway,Act,0.25,0.353,0.7602702702702703
+1000004734_Act,GO::regulation of catalytic activity,Act,0.23125,0.095,0.7602702702702703
+1000004872_Act,GO::pulmonary valve morphogenesis,Act,0.09375,0.24,0.7602702702702703
+1000004905_Act,GO::dopamine metabolic process,Act,0.08125,0.388,0.7602702702702703
+1000004987_Act,GO::bicarbonate transport,Act,0.18125,0.226,0.7602702702702703
+1000005004_Act,GO::regulation of protein binding,Act,0.1,0.41,0.7602702702702703
+1000005014_Act,GO::cortical actin cytoskeleton organization,Act,0.14375,0.175,0.7602702702702703
+1000005070_Act,GO::phagocytosis,Act,0.1625,0.413,0.7602702702702703
+1000005073_Act,GO::vesicle docking involved in exocytosis,Act,0.125,0.42,0.7602702702702703
+1000005095_Act,GO::fertilization,Act,0.14375,0.414,0.7602702702702703
+1000004876_Act,GO::response to virus,Act,0.2375,0.415,0.7602702702702703
+1000003004_Act,GO::zinc ion transmembrane transport,Act,0.1125,0.217,0.7602702702702703
+1000004699_Act,GO::positive regulation of osteoblast differentiation,Act,0.18125,0.396,0.7602702702702703
+1000004602_Act,GO::embryonic cranial skeleton morphogenesis,Act,0.18125,0.096,0.7602702702702703
+1000004115_Act,GO::memory,Act,0.23125,0.29,0.7602702702702703
+1000004140_Act,GO::platelet-derived growth factor receptor signaling pathway,Act,0.15,0.225,0.7602702702702703
+1000004249_Act,GO::developmental growth,Act,0.10625,0.415,0.7602702702702703
+1000004264_Act,GO::positive regulation of tyrosine phosphorylation of STAT protein,Act,0.1875,0.485,0.7602702702702703
+1000004298_Act,GO::response to hormone,Act,0.175,0.213,0.7602702702702703
+1000004337_Act,GO::cell fate determination,Act,0.10625,0.283,0.7602702702702703
+1000004391_Act,GO::smooth muscle contraction,Act,0.09375,0.389,0.7602702702702703
+1000004653_Act,GO::regulation of establishment of cell polarity,Act,0.10625,0.275,0.7602702702702703
+1000004437_Act,GO::positive regulation of G2/M transition of mitotic cell cycle,Act,0.1125,0.483,0.7602702702702703
+1000004445_Act,GO::protein autoubiquitination,Act,0.21875,0.196,0.7602702702702703
+1000004485_Act,GO::positive regulation of mRNA splicing; via spliceosome,Act,0.125,0.271,0.7602702702702703
+1000004500_Act,GO::bone resorption,Act,0.1,0.469,0.7602702702702703
+1000004566_Act,GO::positive regulation of protein sumoylation,Act,0.0875,0.182,0.7602702702702703
+1000004569_Act,GO::social behavior,Act,0.2,0.212,0.7602702702702703
+1000004572_Act,GO::RNA polymerase I preinitiation complex assembly,Act,0.0875,0.141,0.7602702702702703
+1000004575_Act,GO::negative regulation of cold-induced thermogenesis,Act,0.15,0.475,0.7602702702702703
+1000004438_Act,GO::negative regulation of neuron projection development,Act,0.20625,0.258,0.7602702702702703
+1000005118_Act,GO::positive regulation of protein binding,Act,0.23125,0.185,0.7602702702702703
+1000002953_Act,GO::membrane protein intracellular domain proteolysis,Act,0.10625,0.323,0.7602702702702703
+1000002866_Act,GO::negative regulation of protein catabolic process,Act,0.1375,0.408,0.7602702702702703
+1000001372_Act,GO::regulation of cardiac muscle contraction,Act,0.1,0.317,0.7602702702702703
+1000001418_Act,GO::positive regulation of release of cytochrome c from mitochondria,Act,0.125,0.405,0.7602702702702703
+1000001581_Act,GO::locomotor rhythm,Act,0.08125,0.297,0.7602702702702703
+1000001610_Act,GO::regulation of vascular permeability,Act,0.09375,0.154,0.7602702702702703
+1000001634_Act,GO::response to zinc ion,Act,0.125,0.484,0.7602702702702703
+1000001669_Act,GO::positive regulation of CREB transcription factor activity,Act,0.09375,0.474,0.7602702702702703
+1000001701_Act,GO::synaptic vesicle exocytosis,Act,0.15,0.14,0.7602702702702703
+1000001703_Act,GO::negative regulation of DNA replication,Act,0.1,0.332,0.7602702702702703
+1000001718_Act,GO::regulation of mitotic cell cycle phase transition,Act,0.25,0.207,0.7602702702702703
+1000001731_Act,GO::positive regulation of substrate adhesion-dependent cell spreading,Act,0.14375,0.362,0.7602702702702703
+1000001850_Act,GO::atrial septum development,Act,0.0625,0.198,0.7602702702702703
+1000001891_Act,GO::protein K48-linked deubiquitination,Act,0.125,0.45,0.7602702702702703
+1000001898_Act,GO::synaptonemal complex assembly,Act,0.10625,0.342,0.7602702702702703
+1000001920_Act,GO::embryonic limb morphogenesis,Act,0.16875,0.217,0.7602702702702703
+1000001926_Act,GO::negative regulation of BMP signaling pathway,Act,0.1625,0.413,0.7602702702702703
+1000001298_Act,GO::regulation of hematopoietic stem cell differentiation,Act,0.21875,0.244,0.7602702702702703
+1000001252_Act,GO::positive regulation of calcineurin-NFAT signaling cascade,Act,0.0875,0.479,0.7602702702702703
+1000001219_Act,GO::heterotypic cell-cell adhesion,Act,0.125,0.368,0.7602702702702703
+1000001196_Act,GO::regulation of blood pressure,Act,0.18125,0.407,0.7602702702702703
+1000000446_Act,GO::cellular response to interleukin-4,Act,0.10625,0.463,0.7602702702702703
+1000000543_Act,GO::vesicle fusion with Golgi apparatus,Act,0.0625,0.465,0.7602702702702703
+1000000606_Act,GO::positive regulation of double-strand break repair,Act,0.08125,0.323,0.7602702702702703
+1000000647_Act,GO::miRNA loading onto RISC involved in gene silencing by miRNA,Act,0.075,0.185,0.7602702702702703
+1000000669_Act,GO::phosphatidylinositol biosynthetic process,Act,0.21875,0.317,0.7602702702702703
+1000000726_Act,GO::regulation of extracellular matrix disassembly,Act,0.0625,0.198,0.7602702702702703
+1000000856_Act,GO::positive regulation of mitochondrial depolarization,Act,0.06875,0.453,0.7602702702702703
+1000001943_Act,GO::response to cocaine,Act,0.13125,0.356,0.7602702702702703
+1000000900_Act,GO::autophagy of mitochondrion,Act,0.1375,0.43,0.7602702702702703
+1000000972_Act,GO::negative regulation of focal adhesion assembly,Act,0.13125,0.136,0.7602702702702703
+1000001047_Act,GO::cellular response to insulin stimulus,Act,0.24375,0.321,0.7602702702702703
+1000001084_Act,GO::endothelium development,Act,0.0625,0.198,0.7602702702702703
+1000001113_Act,GO::regulation of ventricular cardiac muscle cell membrane repolarization,Act,0.10625,0.403,0.7602702702702703
+1000001138_Act,GO::positive regulation of telomerase activity,Act,0.125,0.492,0.7602702702702703
+1000001145_Act,GO::rRNA transcription,Act,0.075,0.444,0.7602702702702703
+1000001161_Act,GO::sulfate transmembrane transport,Act,0.09375,0.336,0.7602702702702703
+1000000971_Act,GO::regulation of protein kinase B signaling,Act,0.06875,0.453,0.7602702702702703
+1000001953_Act,GO::decidualization,Act,0.1125,0.344,0.7602702702702703
+1000001961_Act,GO::pre-miRNA processing,Act,0.0875,0.305,0.7602702702702703
+1000001993_Act,GO::positive regulation of transcription from RNA polymerase II promoter in response to endoplasmic reticulum stress,Act,0.08125,0.297,0.7602702702702703
+1000002466_Act,GO::regulation of phosphatidylinositol 3-kinase signaling,Act,0.1125,0.348,0.7602702702702703
+1000002521_Act,GO::blastocyst development,Act,0.1,0.332,0.7602702702702703
+1000002934_Act,GO::regulation of G2/M transition of mitotic cell cycle,Act,0.24375,0.231,0.7602702702702703
+1000002593_Act,GO::endocrine pancreas development,Act,0.10625,0.393,0.7602702702702703
+1000002599_Act,GO::positive regulation of cardiac muscle cell proliferation,Act,0.1375,0.469,0.7602702702702703
+1000002613_Act,GO::actin filament capping,Act,0.0875,0.281,0.7602702702702703
+1000002637_Act,GO::negative regulation of protein kinase activity by regulation of protein phosphorylation,Act,0.08125,0.167,0.7602702702702703
+1000002427_Act,GO::bone mineralization,Act,0.16875,0.316,0.7602702702702703
+1000002656_Act,GO::anion transport,Act,0.09375,0.194,0.7602702702702703
+1000002683_Act,GO::positive regulation of interleukin-12 production,Act,0.1125,0.393,0.7602702702702703
+1000002721_Act,GO::cellular response to BMP stimulus,Act,0.125,0.484,0.7602702702702703
+1000002769_Act,GO::negative regulation of smooth muscle cell proliferation,Act,0.13125,0.356,0.7602702702702703
+1000002772_Act,GO::positive regulation of smooth muscle cell proliferation,Act,0.175,0.437,0.7602702702702703
+1000002820_Act,GO::myoblast fusion,Act,0.1125,0.288,0.7602702702702703
+1000002840_Act,GO::negative regulation of bone mineralization,Act,0.09375,0.294,0.7602702702702703
+1000002864_Act,GO::toll-like receptor 4 signaling pathway,Act,0.1125,0.176,0.7602702702702703
+1000002657_Act,GO::chloride transport,Act,0.1375,0.31,0.7602702702702703
+1000002906_Act,GO::roof of mouth development,Act,0.2,0.3,0.7602702702702703
+1000002411_Act,GO::nucleotide-excision repair; preincision complex assembly,Act,0.11875,0.453,0.7602702702702703
+1000002344_Act,GO::eye development,Act,0.13125,0.387,0.7602702702702703
+1000002001_Act,GO::aerobic respiration,Act,0.13125,0.387,0.7602702702702703
+1000006839_LoF,GO::regulation of cell-cell adhesion,LoF,0.075,0.096,0.7602702702702703
+1000002075_Act,GO::regulation of transcription by RNA polymerase I,Act,0.06875,0.12,0.7602702702702703
+1000002080_Act,GO::cellular protein localization,Act,0.1625,0.259,0.7602702702702703
+1000002086_Act,GO::cellular response to gonadotropin-releasing hormone,Act,0.0625,0.465,0.7602702702702703
+1000002087_Act,GO::regulation of blood vessel diameter,Act,0.09375,0.223,0.7602702702702703
+1000002089_Act,GO::negative regulation of cytosolic calcium ion concentration,Act,0.1125,0.112,0.7602702702702703
+1000002359_Act,GO::positive regulation of NIK/NF-kappaB signaling,Act,0.19375,0.313,0.7602702702702703
+1000002130_Act,GO::muscle filament sliding,Act,0.1625,0.259,0.7602702702702703
+1000002144_Act,GO::ventricular septum morphogenesis,Act,0.15,0.345,0.7602702702702703
+1000002166_Act,GO::regulation of heart contraction,Act,0.16875,0.199,0.7602702702702703
+1000002213_Act,GO::embryo implantation,Act,0.15625,0.311,0.7602702702702703
+1000002221_Act,GO::negative regulation of smooth muscle cell migration,Act,0.10625,0.165,0.7602702702702703
+1000002317_Act,GO::cellular response to starvation,Act,0.2125,0.277,0.7602702702702703
+1000002324_Act,GO::regulation of dendrite morphogenesis,Act,0.1375,0.169,0.7602702702702703
+1000002340_Act,GO::cellular amino acid biosynthetic process,Act,0.125,0.292,0.7602702702702703
+1000002135_Act,GO::positive regulation of chromatin binding,Act,0.09375,0.223,0.7602702702702703
+1000005130_Act,GO::phosphatidylinositol phosphorylation,Act,0.1875,0.252,0.7602702702702703
+1000005144_Act,GO::cellular response to cytokine stimulus,Act,0.18125,0.329,0.7602702702702703
+1000005159_Act,GO::regulation of synaptic vesicle exocytosis,Act,0.1625,0.465,0.7602702702702703
+1000008077_Act,GO::regulation of neurogenesis,Act,0.1625,0.161,0.7602702702702703
+1000008153_Act,GO::skeletal muscle contraction,Act,0.1375,0.209,0.7602702702702703
+1000008154_Act,GO::positive regulation of cell size,Act,0.1,0.111,0.7602702702702703
+1000008165_Act,GO::telomere capping,Act,0.1125,0.483,0.7602702702702703
+1000008176_Act,GO::long-chain fatty acid transport,Act,0.08125,0.4,0.7602702702702703
+1000008183_Act,GO::response to electrical stimulus,Act,0.13125,0.293,0.7602702702702703
+1000008219_Act,GO::regulation of heart rate by cardiac conduction,Act,0.15625,0.311,0.7602702702702703
+1000008226_Act,GO::COPII vesicle coating,Act,0.175,0.473,0.7602702702702703
+1000008268_Act,GO::response to mechanical stimulus,Act,0.1875,0.352,0.7602702702702703
+1000008284_Act,GO::semaphorin-plexin signaling pathway,Act,0.1375,0.38,0.7602702702702703
+1000008304_Act,GO::skeletal muscle cell differentiation,Act,0.15,0.475,0.7602702702702703
+1000008310_Act,GO::positive regulation of B cell proliferation,Act,0.14375,0.421,0.7602702702702703
+1000008340_Act,GO::cellular response to amyloid-beta,Act,0.1625,0.359,0.7602702702702703
+1000008346_Act,GO::SCF-dependent proteasomal ubiquitin-dependent protein catabolic process,Act,0.2375,0.326,0.7602702702702703
+1000008347_Act,GO::anaphase-promoting complex-dependent catabolic process,Act,0.2375,0.298,0.7602702702702703
+1000008056_Act,GO::response to stimulus,Act,0.175,0.442,0.7602702702702703
+1000008053_Act,GO::dorsal/ventral pattern formation,Act,0.13125,0.349,0.7602702702702703
+1000008045_Act,GO::mast cell degranulation,Act,0.09375,0.24,0.7602702702702703
+1000007922_Act,GO::cellular calcium ion homeostasis,Act,0.225,0.409,0.7602702702702703
+1000007402_Act,GO::RNA splicing; via transesterification reactions,Act,0.1375,0.209,0.7602702702702703
+1000007412_Act,GO::polyphosphate catabolic process,Act,0.0625,0.198,0.7602702702702703
+1000007466_Act,GO::ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway,Act,0.1125,0.288,0.7602702702702703
+1000007476_Act,GO::protein K11-linked deubiquitination,Act,0.075,0.32,0.7602702702702703
+1000007510_Act,GO::piRNA metabolic process,Act,0.09375,0.294,0.7602702702702703
+1000007538_Act,GO::negative chemotaxis,Act,0.16875,0.199,0.7602702702702703
+1000007597_Act,GO::cation transport,Act,0.15,0.317,0.7602702702702703
+1000008362_Act,GO::hemopoiesis,Act,0.19375,0.318,0.7602702702702703
+1000007634_Act,GO::positive regulation of autophagosome assembly,Act,0.075,0.389,0.7602702702702703
+1000007667_Act,GO::positive regulation of voltage-gated calcium channel activity,Act,0.0875,0.121,0.7602702702702703
+1000007690_Act,GO::regulation of histone acetylation,Act,0.06875,0.251,0.7602702702702703
+1000007812_Act,GO::positive regulation of activated T cell proliferation,Act,0.14375,0.222,0.7602702702702703
+1000007849_Act,GO::amyloid-beta clearance,Act,0.0875,0.225,0.7602702702702703
+1000007862_Act,GO::diacylglycerol metabolic process,Act,0.08125,0.4,0.7602702702702703
+1000007874_Act,GO::positive regulation of glycolytic process,Act,0.13125,0.176,0.7602702702702703
+1000007886_Act,GO::beta-catenin-TCF complex assembly,Act,0.1375,0.298,0.7602702702702703
+1000007639_Act,GO::RNA phosphodiester bond hydrolysis; exonucleolytic,Act,0.13125,0.434,0.7602702702702703
+1000008381_Act,GO::positive regulation of methylation-dependent chromatin silencing,Act,0.06875,0.453,0.7602702702702703
+1000008391_Act,GO::IRE1-mediated unfolded protein response,Act,0.19375,0.262,0.7602702702702703
+1000008412_Act,GO::ossification,Act,0.2125,0.345,0.7602702702702703
+1000009178_Act,kegg::Adipocytokine signaling pathway - Homo sapiens (human),Act,0.20625,0.342,0.7602702702702703
+1000009181_Act,kegg::Regulation of lipolysis in adipocytes - Homo sapiens (human),Act,0.2125,0.175,0.7602702702702703
+1000009196_Act,kegg::Vasopressin-regulated water reabsorption - Homo sapiens (human),Act,0.175,0.264,0.7602702702702703
+1000009197_Act,kegg::Proximal tubule bicarbonate reclamation - Homo sapiens (human),Act,0.1375,0.183,0.7602702702702703
+1000009198_Act,kegg::Collecting duct acid secretion - Homo sapiens (human),Act,0.18125,0.082,0.7602702702702703
+1000009208_Act,kegg::Cholesterol metabolism - Homo sapiens (human),Act,0.15625,0.466,0.7602702702702703
+1000009214_Act,kegg::Cocaine addiction - Homo sapiens (human),Act,0.2,0.192,0.7602702702702703
+1000009150_Act,kegg::Circadian rhythm - Homo sapiens (human),Act,0.16875,0.157,0.7602702702702703
+1000009215_Act,kegg::Amphetamine addiction - Homo sapiens (human),Act,0.2375,0.175,0.7602702702702703
+1000009230_Act,kegg::Malaria - Homo sapiens (human),Act,0.15625,0.471,0.7602702702702703
+1000009397_Act,humanCyc::3-phosphoinositide,Act,0.11875,0.416,0.7602702702702703
+1000002242_LoF,GO::heterophilic cell-cell adhesion via plasma membrane cell adhesion molecules,LoF,0.13125,0.389,0.7602702702702703
+1000002512_LoF,GO::neuronal action potential,LoF,0.10625,0.292,0.7602702702702703
+1000003566_LoF,GO::regulation of JNK cascade,LoF,0.0875,0.161,0.7602702702702703
+1000004373_LoF,GO::interferon-gamma production,LoF,0.06875,0.115,0.7602702702702703
+1000005309_LoF,GO::skeletal muscle tissue regeneration,LoF,0.06875,0.375,0.7602702702702703
+1000009219_Act,kegg::Bacterial invasion of epithelial cells - Homo sapiens (human),Act,0.21875,0.312,0.7602702702702703
+1000007379_Act,GO::extrinsic apoptotic signaling pathway,Act,0.15625,0.348,0.7602702702702703
+1000009113_Act,kegg::Hedgehog signaling pathway - Homo sapiens (human),Act,0.15,0.475,0.7602702702702703
+1000009059_Act,kegg::Proteasome - Homo sapiens (human),Act,0.15,0.476,0.7602702702702703
+1000008417_Act,GO::action potential,Act,0.1125,0.241,0.7602702702702703
+1000008462_Act,GO::tumor necrosis factor-mediated signaling pathway,Act,0.24375,0.493,0.7602702702702703
+1000008466_Act,GO::substantia nigra development,Act,0.18125,0.216,0.7602702702702703
+1000008494_Act,GO::extrinsic apoptotic signaling pathway in absence of ligand,Act,0.1375,0.31,0.7602702702702703
+1000008534_Act,GO::tRNA aminoacylation for protein translation,Act,0.1375,0.408,0.7602702702702703
+1000008604_Act,GO::proteasomal protein catabolic process,Act,0.1375,0.327,0.7602702702702703
+1000008605_Act,GO::proteasomal ubiquitin-independent protein catabolic process,Act,0.11875,0.326,0.7602702702702703
+1000009089_Act,kegg::SNARE interactions in vesicular transport - Homo sapiens (human),Act,0.13125,0.433,0.7602702702702703
+1000008606_Act,GO::regulation of cell motility,Act,0.11875,0.463,0.7602702702702703
+1000008726_Act,GO::transcytosis,Act,0.06875,0.453,0.7602702702702703
+1000008905_Act,GO::positive regulation of nitric-oxide synthase activity,Act,0.15625,0.099,0.7602702702702703
+1000008980_Act,kegg::Arginine biosynthesis - Homo sapiens (human),Act,0.10625,0.388,0.7602702702702703
+1000008985_Act,"kegg::Glycine, serine and threonine metabolism - Homo sapiens (human)",Act,0.15,0.365,0.7602702702702703
+1000009014_Act,kegg::Glycerolipid metabolism - Homo sapiens (human),Act,0.175,0.465,0.7602702702702703
+1000009030_Act,kegg::One carbon pool by folate - Homo sapiens (human),Act,0.09375,0.476,0.7602702702702703
+1000009041_Act,kegg::Terpenoid backbone biosynthesis - Homo sapiens (human),Act,0.10625,0.403,0.7602702702702703
+1000008644_Act,GO::positive regulation of keratinocyte differentiation,Act,0.08125,0.491,0.7602702702702703
+1000000439_Act,GO::regulation of mitotic cell cycle,Act,0.15,0.382,0.7602702702702703
+1000007362_Act,GO::lipid glycosylation,Act,0.08125,0.323,0.7602702702702703
+1000007300_Act,GO::oxalate transport,Act,0.06875,0.453,0.7602702702702703
+1000005805_Act,GO::regulation of cholesterol biosynthetic process,Act,0.14375,0.324,0.7602702702702703
+1000005820_Act,GO::positive regulation of vascular associated smooth muscle cell migration,Act,0.11875,0.373,0.7602702702702703
+1000005849_Act,GO::regulation of ventricular cardiac muscle cell membrane depolarization,Act,0.0625,0.465,0.7602702702702703
+1000005851_Act,GO::regulation of atrial cardiac muscle cell membrane depolarization,Act,0.06875,0.397,0.7602702702702703
+1000005859_Act,GO::regulation of synapse assembly,Act,0.075,0.259,0.7602702702702703
+1000005899_Act,GO::mRNA transcription by RNA polymerase II,Act,0.09375,0.474,0.7602702702702703
+1000005932_Act,GO::optic nerve morphogenesis,Act,0.06875,0.12,0.7602702702702703
+1000005968_Act,GO::positive regulation of type I interferon production,Act,0.1625,0.465,0.7602702702702703
+1000005985_Act,GO::Golgi to plasma membrane protein transport,Act,0.13125,0.351,0.7602702702702703
+1000005990_Act,GO::membrane protein ectodomain proteolysis,Act,0.125,0.284,0.7602702702702703
+1000006055_Act,GO::positive regulation of ATPase activity,Act,0.1375,0.469,0.7602702702702703
+1000006086_Act,GO::interleukin-6-mediated signaling pathway,Act,0.10625,0.251,0.7602702702702703
+1000006107_Act,GO::histone exchange,Act,0.06875,0.313,0.7602702702702703
+1000006151_Act,GO::positive regulation of transcription by RNA polymerase I,Act,0.09375,0.208,0.7602702702702703
+1000006223_Act,GO::leukocyte migration involved in inflammatory response,Act,0.075,0.259,0.7602702702702703
+1000005783_Act,GO::ciliary neurotrophic factor-mediated signaling pathway,Act,0.075,0.118,0.7602702702702703
+1000005773_Act,GO::neuromuscular synaptic transmission,Act,0.125,0.484,0.7602702702702703
+1000005722_Act,GO::positive regulation of cation channel activity,Act,0.08125,0.167,0.7602702702702703
+1000005556_Act,GO::limb development,Act,0.1375,0.31,0.7602702702702703
+1000005166_Act,GO::ERBB2 signaling pathway,Act,0.15,0.225,0.7602702702702703
+1000005191_Act,GO::DNA replication-independent nucleosome assembly,Act,0.10625,0.478,0.7602702702702703
+1000005192_Act,GO::nucleosome disassembly,Act,0.09375,0.474,0.7602702702702703
+1000005216_Act,GO::response to starvation,Act,0.1375,0.376,0.7602702702702703
+1000005219_Act,GO::cell communication by electrical coupling involved in cardiac conduction,Act,0.0875,0.305,0.7602702702702703
+1000005230_Act,GO::positive regulation of protein localization to plasma membrane,Act,0.1875,0.279,0.7602702702702703
+1000005274_Act,GO::regulation of response to DNA damage stimulus,Act,0.075,0.389,0.7602702702702703
+1000006296_Act,GO::regulation of cellular amino acid metabolic process,Act,0.19375,0.245,0.7602702702702703
+1000005279_Act,GO::protein K63-linked ubiquitination,Act,0.15625,0.311,0.7602702702702703
+1000005310_Act,GO::steroid hormone mediated signaling pathway,Act,0.15625,0.492,0.7602702702702703
+1000005350_Act,GO::negative regulation of T cell activation,Act,0.1,0.192,0.7602702702702703
+1000005466_Act,GO::cellular response to hormone stimulus,Act,0.175,0.233,0.7602702702702703
+1000005467_Act,GO::binding of sperm to zona pellucida,Act,0.15,0.328,0.7602702702702703
+1000005473_Act,GO::cellular response to growth factor stimulus,Act,0.1625,0.376,0.7602702702702703
+1000005476_Act,GO::endochondral ossification,Act,0.14375,0.222,0.7602702702702703
+1000005512_Act,GO::positive regulation of vasoconstriction,Act,0.11875,0.423,0.7602702702702703
+1000005287_Act,GO::anterograde axonal transport,Act,0.13125,0.387,0.7602702702702703
+1000006320_Act,GO::gene silencing by RNA,Act,0.125,0.406,0.7602702702702703
+1000006340_Act,GO::chondrocyte development,Act,0.0875,0.479,0.7602702702702703
+1000006341_Act,GO::epithelial cell development,Act,0.0875,0.225,0.7602702702702703
+1000006916_Act,GO::lysosomal transport,Act,0.0875,0.493,0.7602702702702703
+1000006943_Act,GO::excitatory postsynaptic potential,Act,0.175,0.473,0.7602702702702703
+1000006959_Act,GO::adipose tissue development,Act,0.13125,0.349,0.7602702702702703
+1000006993_Act,GO::response to estrogen,Act,0.1875,0.352,0.7602702702702703
+1000007013_Act,GO::positive regulation of interferon-beta production,Act,0.10625,0.478,0.7602702702702703
+1000007017_Act,GO::positive regulation of chemokine production,Act,0.13125,0.184,0.7602702702702703
+1000007104_Act,GO::regulation of dopamine secretion,Act,0.13125,0.387,0.7602702702702703
+1000006880_Act,GO::proteolysis involved in cellular protein catabolic process,Act,0.15,0.217,0.7602702702702703
+1000007140_Act,GO::posttranscriptional regulation of gene expression,Act,0.13125,0.237,0.7602702702702703
+1000007161_Act,GO::NIK/NF-kappaB signaling,Act,0.20625,0.336,0.7602702702702703
+1000007170_Act,GO::sensory perception of pain,Act,0.1625,0.465,0.7602702702702703
+1000007190_Act,GO::positive regulation of receptor internalization,Act,0.13125,0.228,0.7602702702702703
+1000007196_Act,GO::negative regulation of catalytic activity,Act,0.1625,0.465,0.7602702702702703
+1000007197_Act,GO::positive regulation of catalytic activity,Act,0.25625,0.149,0.7602702702702703
+1000007247_Act,GO::negative regulation of axon extension involved in axon guidance,Act,0.125,0.323,0.7602702702702703
+1000007289_Act,GO::water transport,Act,0.0875,0.479,0.7602702702702703
+1000007145_Act,GO::cellular homeostasis,Act,0.11875,0.115,0.7602702702702703
+1000007339_Act,GO::regulation of intracellular pH,Act,0.175,0.093,0.7602702702702703
+1000006874_Act,GO::epithelial to mesenchymal transition,Act,0.15625,0.287,0.7602702702702703
+1000006813_Act,GO::positive regulation of fibroblast proliferation,Act,0.18125,0.314,0.7602702702702703
+1000006370_Act,GO::positive regulation of tumor necrosis factor production,Act,0.19375,0.245,0.7602702702702703
+1000006436_Act,GO::cellular protein-containing complex assembly,Act,0.0875,0.493,0.7602702702702703
+1000006437_Act,GO::cellular protein-containing complex localization,Act,0.075,0.259,0.7602702702702703
+1000006442_Act,GO::positive regulation of blood vessel diameter,Act,0.09375,0.476,0.7602702702702703
+1000006479_Act,GO::BMP signaling pathway,Act,0.2125,0.435,0.7602702702702703
+1000006480_Act,GO::regulation of bone mineralization,Act,0.0875,0.493,0.7602702702702703
+1000006486_Act,GO::protein sumoylation,Act,0.1875,0.413,0.7602702702702703
+1000006849_Act,GO::response to estradiol,Act,0.225,0.473,0.7602702702702703
+1000006529_Act,GO::phospholipid translocation,Act,0.10625,0.463,0.7602702702702703
+1000006577_Act,GO::male meiotic nuclear division,Act,0.1375,0.209,0.7602702702702703
+1000006615_Act,GO::DNA methylation involved in gamete generation,Act,0.1125,0.29,0.7602702702702703
+1000006662_Act,GO::chaperone-mediated protein complex assembly,Act,0.11875,0.211,0.7602702702702703
+1000006669_Act,GO::tRNA methylation,Act,0.11875,0.478,0.7602702702702703
+1000006683_Act,GO::extracellular matrix disassembly,Act,0.18125,0.483,0.7602702702702703
+1000006741_Act,GO::positive regulation of stress fiber assembly,Act,0.16875,0.39,0.7602702702702703
+1000006744_Act,GO::regulation of cytoskeleton organization,Act,0.1,0.473,0.7602702702702703
+1000006553_Act,GO::positive regulation of vascular endothelial growth factor production,Act,0.14375,0.222,0.7602702702702703
+1000000422_Act,GO::protein kinase A signaling,Act,0.1,0.168,0.7602702702702703
+1000002056_Act,GO::regulation of dopamine metabolic process,Act,0.08125,0.233,0.7602702702702703
+1000009212_Act,kegg::Huntington disease - Homo sapiens (human),Act,0.325,0.447,0.7602702702702703
+1000009168_Act,kegg::Insulin signaling pathway - Homo sapiens (human),Act,0.35,0.117,0.7602702702702703
+1000001064_Act,GO::viral process,Act,0.45625,0.226,0.7602702702702703
+1000006711_Act,GO::regulation of growth,Act,0.1875,0.366,0.7602702702702703
+1000006830_Act,GO::positive regulation of cell proliferation,Act,0.5,0.313,0.7602702702702703
+1000002209_Act,GO::aging,Act,0.34375,0.236,0.7602702702702703
+1000006832_Act,GO::insulin receptor signaling pathway,Act,0.275,0.134,0.7602702702702703
+1000006834_Act,GO::cell proliferation,Act,0.46875,0.123,0.7602702702702703
+1000006837_Act,GO::activation of GTPase activity,Act,0.25,0.305,0.7602702702702703
+1000009161_Act,kegg::Dopaminergic synapse - Homo sapiens (human),Act,0.30625,0.242,0.7602702702702703
+1000009160_Act,kegg::GABAergic synapse - Homo sapiens (human),Act,0.24375,0.293,0.7602702702702703
+1000006881_Act,GO::cell-matrix adhesion,Act,0.25625,0.261,0.7602702702702703
+1000009157_Act,kegg::Glutamatergic synapse - Homo sapiens (human),Act,0.275,0.285,0.7602702702702703
+1000001971_Act,GO::transmembrane transport,Act,0.39375,0.413,0.7602702702702703
+1000000983_Act,GO::platelet activation,Act,0.2625,0.274,0.7602702702702703
+1000009156_Act,kegg::Retrograde endocannabinoid signaling - Homo sapiens (human),Act,0.2875,0.441,0.7602702702702703
+1000009155_Act,kegg::Neurotrophin signaling pathway - Homo sapiens (human),Act,0.3125,0.171,0.7602702702702703
+1000009152_Act,kegg::Thermogenesis - Homo sapiens (human),Act,0.36875,0.367,0.7602702702702703
+1000006889_Act,GO::transmembrane receptor protein tyrosine kinase signaling pathway,Act,0.25,0.403,0.7602702702702703
+1000009147_Act,kegg::TNF signaling pathway - Homo sapiens (human),Act,0.2625,0.343,0.7602702702702703
+1000009143_Act,kegg::T cell receptor signaling pathway - Homo sapiens (human),Act,0.28125,0.206,0.7602702702702703
+1000001918_Act,GO::lung development,Act,0.26875,0.133,0.7602702702702703
+1000009140_Act,kegg::IL-17 signaling pathway - Homo sapiens (human),Act,0.2375,0.356,0.7602702702702703
+1000009139_Act,kegg::Natural killer cell mediated cytotoxicity - Homo sapiens (human),Act,0.3125,0.205,0.7602702702702703
+1000006984_Act,GO::osteoblast differentiation,Act,0.2875,0.173,0.7602702702702703
+1000009137_Act,kegg::JAK-STAT signaling pathway - Homo sapiens (human),Act,0.35625,0.136,0.7602702702702703
+1000009136_Act,kegg::C-type lectin receptor signaling pathway - Homo sapiens (human),Act,0.30625,0.107,0.7602702702702703
+1000007014_Act,GO::positive regulation of interferon-gamma production,Act,0.225,0.092,0.7602702702702703
+1000009133_Act,kegg::NOD-like receptor signaling pathway - Homo sapiens (human),Act,0.3125,0.49,0.7602702702702703
+1000006886_Act,GO::cell surface receptor signaling pathway,Act,0.3875,0.284,0.7602702702702703
+1000009172_Act,kegg::Progesterone-mediated oocyte maturation - Homo sapiens (human),Act,0.25,0.339,0.7602702702702703
+1000009173_Act,kegg::Estrogen signaling pathway - Homo sapiens (human),Act,0.33125,0.146,0.7602702702702703
+1000002314_Act,GO::cell-cell adhesion,Act,0.30625,0.237,0.7602702702702703
+1000006229_Act,GO::axon guidance,Act,0.38125,0.184,0.7602702702702703
+1000002347_Act,GO::ureteric bud development,Act,0.175,0.173,0.7602702702702703
+1000009232_Act,kegg::Amoebiasis - Homo sapiens (human),Act,0.25625,0.288,0.7602702702702703
+1000006261_Act,GO::flagellated sperm motility,Act,0.20625,0.272,0.7602702702702703
+1000006284_Act,GO::negative regulation of angiogenesis,Act,0.2625,0.433,0.7602702702702703
+1000009218_Act,kegg::Alcoholism - Homo sapiens (human),Act,0.325,0.394,0.7602702702702703
+1000006301_Act,GO::positive regulation of apoptotic process,Act,0.45,0.243,0.7602702702702703
+1000008933_Act,GO::positive regulation of endothelial cell proliferation,Act,0.2625,0.112,0.7602702702702703
+1000009209_Act,kegg::Alzheimer disease - Homo sapiens (human),Act,0.31875,0.371,0.7602702702702703
+1000006312_Act,GO::mitotic cell cycle,Act,0.3,0.385,0.7602702702702703
+1000000754_Act,GO::potassium ion transmembrane transport,Act,0.3,0.17,0.7602702702702703
+1000009188_Act,kegg::Insulin resistance - Homo sapiens (human),Act,0.24375,0.431,0.7602702702702703
+1000009186_Act,"kegg::Parathyroid hormone synthesis, secretion and action - Homo sapiens (human)",Act,0.3,0.152,0.7602702702702703
+1000009185_Act,kegg::Cortisol synthesis and secretion - Homo sapiens (human),Act,0.25625,0.109,0.7602702702702703
+1000006330_Act,GO::regulation of cardiac conduction,Act,0.175,0.372,0.7602702702702703
+1000006389_Act,GO::retrograde vesicle-mediated transport; Golgi to ER,Act,0.21875,0.382,0.7602702702702703
+1000006390_Act,GO::endocytosis,Act,0.30625,0.296,0.7602702702702703
+1000009184_Act,kegg::Relaxin signaling pathway - Homo sapiens (human),Act,0.3375,0.113,0.7602702702702703
+1000006394_Act,GO::receptor-mediated endocytosis,Act,0.35625,0.309,0.7602702702702703
+1000009183_Act,kegg::Aldosterone synthesis and secretion - Homo sapiens (human),Act,0.30625,0.089,0.7602702702702703
+1000000875_Act,GO::epidermis development,Act,0.2125,0.404,0.7602702702702703
+1000006429_Act,GO::regulation of cellular response to heat,Act,0.2125,0.387,0.7602702702702703
+1000009180_Act,kegg::Glucagon signaling pathway - Homo sapiens (human),Act,0.24375,0.38,0.7602702702702703
+1000006593_Act,GO::negative regulation of cell migration,Act,0.31875,0.242,0.7602702702702703
+1000000896_Act,GO::protein processing,Act,0.23125,0.114,0.7602702702702703
+1000000928_Act,GO::platelet degranulation,Act,0.29375,0.272,0.7602702702702703
+1000009176_Act,kegg::Thyroid hormone synthesis - Homo sapiens (human),Act,0.20625,0.375,0.7602702702702703
+1000000940_Act,GO::T cell receptor signaling pathway,Act,0.35625,0.199,0.7602702702702703
+1000000970_Act,GO::positive regulation of protein kinase B signaling,Act,0.33125,0.33,0.7602702702702703
+1000007041_Act,GO::ciliary basal body-plasma membrane docking,Act,0.25,0.305,0.7602702702702703
+1000000680_Act,GO::muscle contraction,Act,0.25625,0.375,0.7602702702702703
+1000007064_Act,GO::regulation of Rho protein signal transduction,Act,0.2875,0.104,0.7602702702702703
+1000007182_Act,GO::positive regulation of protein catabolic process,Act,0.20625,0.342,0.7602702702702703
+1000008080_Act,GO::response to ionizing radiation,Act,0.19375,0.164,0.7602702702702703
+1000008114_Act,GO::angiogenesis,Act,0.4125,0.143,0.7602702702702703
+1000009085_Act,kegg::Oocyte meiosis - Homo sapiens (human),Act,0.2625,0.456,0.7602702702702703
+1000009084_Act,kegg::Cell cycle - Homo sapiens (human),Act,0.2625,0.458,0.7602702702702703
+1000008188_Act,GO::defense response to virus,Act,0.3625,0.223,0.7602702702702703
+1000008294_Act,GO::response to lipopolysaccharide,Act,0.2875,0.351,0.7602702702702703
+1000009082_Act,kegg::Phospholipase D signaling pathway - Homo sapiens (human),Act,0.375,0.069,0.7602702702702703
+1000001294_Act,GO::protein polyubiquitination,Act,0.40625,0.188,0.7602702702702703
+1000008378_Act,GO::positive regulation of cell death,Act,0.15625,0.299,0.7602702702702703
+1000009080_Act,kegg::Phosphatidylinositol signaling system - Homo sapiens (human),Act,0.2875,0.173,0.7602702702702703
+1000008409_Act,GO::blood coagulation,Act,0.31875,0.429,0.7602702702702703
+1000008410_Act,GO::skeletal system development,Act,0.3375,0.123,0.7602702702702703
+1000009079_Act,kegg::FoxO signaling pathway - Homo sapiens (human),Act,0.325,0.173,0.7602702702702703
+1000009087_Act,kegg::Ubiquitin mediated proteolysis - Homo sapiens (human),Act,0.34375,0.141,0.7602702702702703
+1000009078_Act,kegg::HIF-1 signaling pathway - Homo sapiens (human),Act,0.275,0.215,0.7602702702702703
+1000001336_Act,GO::small GTPase mediated signal transduction,Act,0.25625,0.129,0.7602702702702703
+1000009074_Act,kegg::cAMP signaling pathway - Homo sapiens (human),Act,0.39375,0.17,0.7602702702702703
+1000009073_Act,kegg::cGMP-PKG signaling pathway - Homo sapiens (human),Act,0.34375,0.211,0.7602702702702703
+1000009072_Act,kegg::Calcium signaling pathway - Homo sapiens (human),Act,0.34375,0.325,0.7602702702702703
+1000001330_Act,GO::regulation of gene silencing by miRNA,Act,0.20625,0.476,0.7602702702702703
+1000008620_Act,GO::cell cycle,Act,0.375,0.414,0.7602702702702703
+1000009069_Act,kegg::ErbB signaling pathway - Homo sapiens (human),Act,0.3,0.077,0.7602702702702703
+1000008701_Act,GO::sensory perception of sound,Act,0.28125,0.448,0.7602702702702703
+1000008705_Act,GO::visual perception,Act,0.40625,0.108,0.7602702702702703
+1000009015_Act,kegg::Inositol phosphate metabolism - Homo sapiens (human),Act,0.2375,0.226,0.7602702702702703
+1000008989_Act,kegg::Lysine degradation - Homo sapiens (human),Act,0.21875,0.189,0.7602702702702703
+1000008981_Act,kegg::Purine metabolism - Homo sapiens (human),Act,0.26875,0.457,0.7602702702702703
+1000008744_Act,GO::phosphatidylinositol-mediated signaling,Act,0.2125,0.14,0.7602702702702703
+1000009076_Act,kegg::Chemokine signaling pathway - Homo sapiens (human),Act,0.4,0.082,0.7602702702702703
+1000007995_Act,GO::mitochondrion organization,Act,0.26875,0.21,0.7602702702702703
+1000007945_Act,GO::interleukin-1-mediated signaling pathway,Act,0.23125,0.424,0.7602702702702703
+1000007923_Act,GO::post-translational protein modification,Act,0.44375,0.27,0.7602702702702703
+1000009132_Act,kegg::Toll-like receptor signaling pathway - Homo sapiens (human),Act,0.24375,0.38,0.7602702702702703
+1000001078_Act,GO::DNA methylation,Act,0.15,0.113,0.7602702702702703
+1000009125_Act,kegg::Tight junction - Homo sapiens (human),Act,0.3375,0.261,0.7602702702702703
+1000001632_Act,GO::circadian regulation of gene expression,Act,0.18125,0.403,0.7602702702702703
+1000001080_Act,GO::double-strand break repair via nonhomologous end joining,Act,0.23125,0.211,0.7602702702702703
+1000001582_Act,GO::negative regulation of cell growth,Act,0.2625,0.439,0.7602702702702703
+1000001157_Act,GO::collagen catabolic process,Act,0.19375,0.157,0.7602702702702703
+1000009110_Act,kegg::Vascular smooth muscle contraction - Homo sapiens (human),Act,0.31875,0.193,0.7602702702702703
+1000007290_Act,GO::regulation of cell shape,Act,0.30625,0.282,0.7602702702702703
+1000007400_Act,GO::protein import into nucleus,Act,0.2125,0.227,0.7602702702702703
+1000007419_Act,GO::G2/M transition of mitotic cell cycle,Act,0.30625,0.237,0.7602702702702703
+1000009109_Act,kegg::Adrenergic signaling in cardiomyocytes - Homo sapiens (human),Act,0.31875,0.238,0.7602702702702703
+1000009108_Act,kegg::Cardiac muscle contraction - Homo sapiens (human),Act,0.2125,0.411,0.7602702702702703
+1000009107_Act,kegg::Cellular senescence - Homo sapiens (human),Act,0.36875,0.107,0.7602702702702703
+1000007420_Act,GO::G1/S transition of mitotic cell cycle,Act,0.24375,0.351,0.7602702702702703
+1000001555_Act,GO::O-glycan processing,Act,0.20625,0.243,0.7602702702702703
+1000007445_Act,GO::positive regulation of gene expression,Act,0.48125,0.137,0.7602702702702703
+1000009106_Act,kegg::Necroptosis - Homo sapiens (human),Act,0.29375,0.473,0.7602702702702703
+1000001165_Act,GO::proton transmembrane transport,Act,0.23125,0.476,0.7602702702702703
+1000007556_Act,GO::protein dephosphorylation,Act,0.28125,0.41,0.7602702702702703
+1000007598_Act,GO::ion transport,Act,0.25,0.36,0.7602702702702703
+1000007600_Act,GO::calcium ion transport,Act,0.2375,0.226,0.7602702702702703
+1000007621_Act,GO::ephrin receptor signaling pathway,Act,0.2875,0.104,0.7602702702702703
+1000009101_Act,kegg::Apoptosis - Homo sapiens (human),Act,0.35625,0.072,0.7602702702702703
+1000007763_Act,GO::post-embryonic development,Act,0.23125,0.227,0.7602702702702703
+1000009099_Act,kegg::PI3K-Akt signaling pathway - Homo sapiens (human),Act,0.45625,0.245,0.7602702702702703
+1000009097_Act,kegg::Peroxisome - Homo sapiens (human),Act,0.2125,0.444,0.7602702702702703
+1000009096_Act,kegg::Phagosome - Homo sapiens (human),Act,0.29375,0.421,0.7602702702702703
+1000009095_Act,kegg::Endocytosis - Homo sapiens (human),Act,0.40625,0.171,0.7602702702702703
+1000007134_Act,GO::muscle organ development,Act,0.2125,0.48,0.7602702702702703
+1000009236_Act,kegg::Hepatitis B - Homo sapiens (human),Act,0.36875,0.119,0.7602702702702703
+1000008917_Act,GO::RNA splicing,Act,0.28125,0.493,0.7602702702702703
+1000004712_Act,GO::protein stabilization,Act,0.3625,0.171,0.7602702702702703
+1000003309_Act,GO::positive regulation of NF-kappaB transcription factor activity,Act,0.30625,0.346,0.7602702702702703
+1000004439_Act,GO::positive regulation of neuron projection development,Act,0.2625,0.291,0.7602702702702703
+1000000113_Act,GO::peptidyl-tyrosine phosphorylation,Act,0.29375,0.27,0.7602702702702703
+1000002439_Act,GO::somatic stem cell population maintenance,Act,0.2,0.306,0.7602702702702703
+1000000155_Act,GO::regulation of signal transduction by p53 class mediator,Act,0.26875,0.464,0.7602702702702703
+1000000720_Act,GO::positive regulation of transcription of Notch receptor target,Act,0.15625,0.071,0.7602702702702703
+1000004521_Act,GO::protein homooligomerization,Act,0.3375,0.474,0.7602702702702703
+1000009381_Act,humanCyc::superpathway,Act,0.24375,0.155,0.7602702702702703
+1000004538_Act,GO::nervous system development,Act,0.4375,0.187,0.7602702702702703
+1000004546_Act,GO::negative regulation of protein phosphorylation,Act,0.24375,0.146,0.7602702702702703
+1000003334_Act,GO::regulation of gene expression,Act,0.30625,0.254,0.7602702702702703
+1000004636_Act,GO::axonogenesis,Act,0.225,0.284,0.7602702702702703
+1000009280_Act,kegg::Arrhythmogenic right ventricular cardiomyopathy (ARVC) - Homo sapiens (human),Act,0.24375,0.182,0.7602702702702703
+1000009279_Act,kegg::Hypertrophic cardiomyopathy (HCM) - Homo sapiens (human),Act,0.25,0.245,0.7602702702702703
+1000009270_Act,kegg::Choline metabolism in cancer - Homo sapiens (human),Act,0.30625,0.105,0.7602702702702703
+1000000165_Act,GO::regulation of transcription from RNA polymerase II promoter in response to hypoxia,Act,0.26875,0.087,0.7602702702702703
+1000009268_Act,kegg::Gastric cancer - Homo sapiens (human),Act,0.35625,0.101,0.7602702702702703
+1000009267_Act,kegg::Hepatocellular carcinoma - Homo sapiens (human),Act,0.38125,0.081,0.7602702702702703
+1000004645_Act,GO::integrin-mediated signaling pathway,Act,0.24375,0.292,0.7602702702702703
+1000000177_Act,GO::transcription initiation from RNA polymerase II promoter,Act,0.31875,0.338,0.7602702702702703
+1000000279_Act,GO::protein localization to plasma membrane,Act,0.3125,0.219,0.7602702702702703
+1000003280_Act,GO::lipid transport,Act,0.19375,0.313,0.7602702702702703
+1000009281_Act,kegg::Dilated cardiomyopathy (DCM) - Homo sapiens (human),Act,0.275,0.171,0.7602702702702703
+1000000281_Act,GO::endosomal transport,Act,0.2,0.487,0.7602702702702703
+1000004412_Act,GO::regulation of ion transmembrane transport,Act,0.28125,0.253,0.7602702702702703
+1000004319_Act,GO::peripheral nervous system development,Act,0.16875,0.091,0.7602702702702703
+1000000175_Act,GO::transcription elongation from RNA polymerase I promoter,Act,0.16875,0.135,0.7602702702702703
+1000003612_Act,GO::response to drug,Act,0.325,0.488,0.7602702702702703
+1000000174_Act,GO::termination of RNA polymerase I transcription,Act,0.16875,0.139,0.7602702702702703
+1000002647_Act,GO::chloride transmembrane transport,Act,0.23125,0.376,0.7602702702702703
+1000002880_Act,GO::positive regulation of Notch signaling pathway,Act,0.225,0.101,0.7602702702702703
+1000000172_Act,GO::transcription initiation from RNA polymerase I promoter,Act,0.16875,0.144,0.7602702702702703
+1000000171_Act,GO::T cell proliferation,Act,0.11875,0.258,0.7602702702702703
+1000000101_Act,GO::DNA damage response; signal transduction by p53 class mediator resulting in cell cycle arrest,Act,0.18125,0.403,0.7602702702702703
+1000004008_Act,GO::cell cycle arrest,Act,0.33125,0.166,0.7602702702702703
+1000000091_Act,GO::positive regulation of viral genome replication,Act,0.125,0.366,0.7602702702702703
+1000004331_Act,GO::in utero embryonic development,Act,0.35625,0.17,0.7602702702702703
+1000003515_Act,GO::positive regulation of neuron apoptotic process,Act,0.2125,0.158,0.7602702702702703
+1000000056_Act,GO::locomotory behavior,Act,0.225,0.385,0.7602702702702703
+1000003411_Act,GO::neuron projection development,Act,0.275,0.352,0.7602702702702703
+1000004094_Act,GO::positive regulation of protein targeting to membrane,Act,0.1875,0.084,0.7602702702702703
+1000000188_Act,GO::response to hydrogen peroxide,Act,0.19375,0.245,0.7602702702702703
+1000003346_Act,GO::microtubule-based movement,Act,0.24375,0.231,0.7602702702702703
+1000003342_Act,GO::cytoskeleton organization,Act,0.275,0.464,0.7602702702702703
+1000000042_Act,GO::regulation of glucose metabolic process,Act,0.13125,0.237,0.7602702702702703
+1000000039_Act,GO::polyamine biosynthetic process,Act,0.08125,0.138,0.7602702702702703
+1000004273_Act,GO::positive regulation of I-kappaB kinase/NF-kappaB signaling,Act,0.325,0.365,0.7602702702702703
+1000004317_Act,GO::brain development,Act,0.4,0.111,0.7602702702702703
+1000000059_Act,GO::circadian rhythm,Act,0.19375,0.474,0.7602702702702703
+1000000263_Act,GO::melanosome organization,Act,0.11875,0.256,0.7602702702702703
+1000003821_Act,GO::iron ion homeostasis,Act,0.15,0.224,0.7602702702702703
+1000000283_Act,GO::vesicle-mediated transport,Act,0.28125,0.322,0.7602702702702703
+1000005228_Act,GO::cell division,Act,0.45,0.231,0.7602702702702703
+1000002565_Act,GO::protein deubiquitination,Act,0.36875,0.49,0.7602702702702703
+1000009247_Act,kegg::Transcriptional misregulation in cancer - Homo sapiens (human),Act,0.34375,0.317,0.7602702702702703
+1000000607_Act,GO::cellular response to calcium ion,Act,0.26875,0.149,0.7602702702702703
+1000005268_Act,GO::regulation of small GTPase mediated signal transduction,Act,0.35625,0.088,0.7602702702702703
+1000005281_Act,GO::neuron migration,Act,0.25625,0.378,0.7602702702702703
+1000005291_Act,GO::endodermal cell differentiation,Act,0.13125,0.324,0.7602702702702703
+1000002523_Act,GO::kidney development,Act,0.25625,0.278,0.7602702702702703
+1000003075_Act,GO::cell maturation,Act,0.175,0.181,0.7602702702702703
+1000009242_Act,kegg::Kaposi sarcoma-associated herpesvirus infection - Homo sapiens (human),Act,0.3875,0.125,0.7602702702702703
+1000000317_Act,GO::mammary gland development,Act,0.125,0.251,0.7602702702702703
+1000005349_Act,GO::positive regulation of peptidyl-serine phosphorylation,Act,0.25,0.245,0.7602702702702703
+1000002493_Act,GO::heart development,Act,0.39375,0.096,0.7602702702702703
+1000005654_Act,GO::protein transport,Act,0.4,0.449,0.7602702702702703
+1000005974_Act,GO::cell differentiation,Act,0.49375,0.316,0.7602702702702703
+1000005991_Act,GO::proteolysis,Act,0.46875,0.341,0.7602702702702703
+1000006039_Act,GO::protein homotetramerization,Act,0.23125,0.324,0.7602702702702703
+1000003035_Act,GO::positive regulation of cold-induced thermogenesis,Act,0.28125,0.182,0.7602702702702703
+1000002463_Act,GO::positive regulation of phosphatidylinositol 3-kinase signaling,Act,0.23125,0.322,0.7602702702702703
+1000003018_Act,GO::Golgi organization,Act,0.2875,0.22,0.7602702702702703
+1000006105_Act,GO::regulation of mRNA stability,Act,0.24375,0.46,0.7602702702702703
+1000009238_Act,kegg::Human cytomegalovirus infection - Homo sapiens (human),Act,0.43125,0.07,0.7602702702702703
+1000009241_Act,kegg::Human T-cell leukemia virus 1 infection - Homo sapiens (human),Act,0.3625,0.338,0.7602702702702703
+1000000575_Act,GO::neural crest cell migration,Act,0.1875,0.214,0.7602702702702703
+1000009248_Act,kegg::Viral carcinogenesis - Homo sapiens (human),Act,0.4125,0.089,0.7602702702702703
+1000009251_Act,kegg::MicroRNAs in cancer - Homo sapiens (human),Act,0.4,0.411,0.7602702702702703
+1000004830_Act,GO::release of sequestered calcium ion into cytosol,Act,0.225,0.08,0.7602702702702703
+1000004871_Act,GO::regulation of transcription; DNA-templated,Act,0.48125,0.368,0.7602702702702703
+1000002537_Act,GO::transforming growth factor beta receptor signaling pathway,Act,0.23125,0.476,0.7602702702702703
+1000004892_Act,GO::proteasome-mediated ubiquitin-dependent protein catabolic process,Act,0.31875,0.438,0.7602702702702703
+1000000298_Act,GO::regulation of membrane potential,Act,0.2625,0.301,0.7602702702702703
+1000002533_Act,GO::epidermal growth factor receptor signaling pathway,Act,0.19375,0.245,0.7602702702702703
+1000009254_Act,kegg::Pancreatic cancer - Homo sapiens (human),Act,0.20625,0.431,0.7602702702702703
+1000000280_Act,GO::negative regulation of DNA-binding transcription factor activity,Act,0.2375,0.215,0.7602702702702703
+1000009259_Act,kegg::Basal cell carcinoma - Homo sapiens (human),Act,0.19375,0.362,0.7602702702702703
+1000003195_Act,GO::ion transmembrane transport,Act,0.3875,0.207,0.7602702702702703
+1000004732_Act,GO::cilium assembly,Act,0.3125,0.44,0.7602702702702703
+1000003186_Act,GO::positive regulation of angiogenesis,Act,0.29375,0.406,0.7602702702702703
+1000002925_Act,GO::protein phosphorylation,Act,0.49375,0.261,0.7602702702702703
+1000000511_Act,GO::activation of MAPK activity,Act,0.26875,0.388,0.7602702702702703
+1000000302_Act,GO::negative regulation of anoikis,Act,0.0875,0.479,0.7602702702702703
+1000005190_Act,GO::chromatin remodeling,Act,0.2625,0.286,0.7602702702702703
+1000005212_Act,GO::glucose homeostasis,Act,0.25625,0.376,0.7602702702702703
+1000004736_Act,GO::regulation of insulin secretion,Act,0.2375,0.16,0.7602702702702703
+1000008275_Act,GO::response to calcium ion,Act,0.16875,0.495,0.7621428571428571
+1000003716_Act,GO::cell migration,Act,0.31875,0.525,0.773125925925926
+1000009054_Act,kegg::RNA degradation - Homo sapiens (human),Act,0.19375,0.537,0.773125925925926
+1000009225_Act,kegg::Pertussis - Homo sapiens (human),Act,0.19375,0.51,0.773125925925926
+1000000448_Act,GO::suckling behavior,Act,0.075,0.518,0.773125925925926
+1000004996_Act,GO::positive regulation of erythrocyte differentiation,Act,0.1125,0.533,0.773125925925926
+1000009114_Act,kegg::TGF-beta signaling pathway - Homo sapiens (human),Act,0.20625,0.532,0.773125925925926
+1000009217_Act,kegg::Nicotine addiction - Homo sapiens (human),Act,0.13125,0.536,0.773125925925926
+1000005386_Act,GO::positive regulation of interleukin-8 production,Act,0.10625,0.531,0.773125925925926
+1000004972_Act,GO::regulation of potassium ion transmembrane transport,Act,0.08125,0.519,0.773125925925926
+1000004752_Act,GO::fatty acid biosynthetic process,Act,0.13125,0.528,0.773125925925926
+1000000514_Act,GO::nuclear-transcribed mRNA catabolic process; nonsense-mediated decay,Act,0.2375,0.534,0.773125925925926
+1000005354_Act,GO::macroautophagy,Act,0.2125,0.522,0.773125925925926
+1000009389_Act,humanCyc::tRNA,Act,0.13125,0.52,0.773125925925926
+1000007520_Act,GO::interleukin-15-mediated signaling pathway,Act,0.075,0.518,0.773125925925926
+1000008781_Act,GO::protein complex oligomerization,Act,0.18125,0.505,0.773125925925926
+1000004493_Act,GO::double-strand break repair via homologous recombination,Act,0.2,0.527,0.773125925925926
+1000002060_Act,GO::negative regulation of epidermal growth factor receptor signaling pathway,Act,0.125,0.523,0.773125925925926
+1000001077_Act,GO::outflow tract morphogenesis,Act,0.15,0.52,0.773125925925926
+1000002564_Act,GO::positive regulation of translation,Act,0.18125,0.528,0.773125925925926
+1000003283_Act,GO::endosome to lysosome transport,Act,0.14375,0.53,0.773125925925926
+1000003272_Act,GO::cell fate commitment,Act,0.15,0.516,0.773125925925926
+1000004963_Act,GO::negative regulation of G1/S transition of mitotic cell cycle,Act,0.175,0.519,0.773125925925926
+1000003829_Act,GO::ER overload response,Act,0.06875,0.527,0.773125925925926
+1000007144_Act,GO::mesoderm development,Act,0.11875,0.506,0.773125925925926
+1000002257_Act,GO::positive regulation of insulin secretion involved in cellular response to glucose stimulus,Act,0.11875,0.535,0.773125925925926
+1000002410_Act,GO::nucleotide-excision repair; DNA incision; 3'-to lesion,Act,0.09375,0.506,0.773125925925926
+1000002416_Act,GO::nucleotide-excision repair; preincision complex stabilization,Act,0.09375,0.506,0.773125925925926
+1000007320_Act,GO::methylation,Act,0.175,0.536,0.773125925925926
+1000009227_Act,kegg::Leishmaniasis - Homo sapiens (human),Act,0.1875,0.514,0.773125925925926
+1000007605_Act,GO::positive regulation of protein kinase activity,Act,0.15625,0.524,0.773125925925926
+1000006610_Act,GO::mRNA export from nucleus,Act,0.225,0.525,0.773125925925926
+1000001657_Act,GO::spermatid development,Act,0.19375,0.535,0.773125925925926
+1000009264_Act,kegg::Small cell lung cancer - Homo sapiens (human),Act,0.2125,0.522,0.773125925925926
+1000001109_Act,GO::positive regulation of canonical Wnt signaling pathway,Act,0.26875,0.517,0.773125925925926
+1000001020_Act,GO::negative regulation of cell migration involved in sprouting angiogenesis,Act,0.14375,0.517,0.773125925925926
+1000008984_Act,"kegg::Alanine, aspartate and glutamate metabolism - Homo sapiens (human)",Act,0.125,0.523,0.773125925925926
+1000008965_Act,kegg::Citrate cycle (TCA cycle) - Homo sapiens (human),Act,0.1125,0.532,0.773125925925926
+1000008441_Act,GO::positive regulation of reactive oxygen species metabolic process,Act,0.10625,0.531,0.773125925925926
+1000001213_Act,GO::endocytic recycling,Act,0.125,0.523,0.773125925925926
+1000008799_Act,GO::antigen processing and presentation of exogenous peptide antigen via MHC class I; TAP-dependent,Act,0.19375,0.51,0.773125925925926
+1000004436_Act,GO::negative regulation of G2/M transition of mitotic cell cycle,Act,0.1625,0.538,0.773125925925926
+1000008664_Act,GO::mRNA 3'-end processing,Act,0.1625,0.538,0.773125925925926
+1000008647_Act,GO::regulation of keratinocyte differentiation,Act,0.08125,0.519,0.773125925925926
+1000001331_Act,GO::neurotransmitter secretion,Act,0.15,0.507,0.773125925925926
+1000004307_Act,GO::regulation of apoptotic process,Act,0.325,0.513,0.773125925925926
+1000002379_Act,GO::regulation of multicellular organism growth,Act,0.10625,0.545,0.7751466275659825
+1000004133_Act,GO::prostaglandin biosynthetic process,Act,0.075,0.544,0.7751466275659825
+1000004509_Act,GO::response to endoplasmic reticulum stress,Act,0.1875,0.543,0.7751466275659825
+1000007596_Act,GO::potassium ion transport,Act,0.1875,0.543,0.7751466275659825
+1000000416_Act,GO::protein kinase C-activating G protein-coupled receptor signaling pathway,Act,0.10625,0.545,0.7751466275659825
+1000006222_Act,GO::acute inflammatory response,Act,0.075,0.544,0.7751466275659825
+1000009141_Act,kegg::Th1 and Th2 cell differentiation - Homo sapiens (human),Act,0.2125,0.544,0.7751466275659825
+1000009086_Act,kegg::p53 signaling pathway - Homo sapiens (human),Act,0.18125,0.546,0.7754319180087847
+1000005782_Act,GO::mitochondrial translational elongation,Act,0.20625,0.549,0.7774160583941606
+1000002968_Act,GO::xenobiotic metabolic process,Act,0.20625,0.549,0.7774160583941606
+1000005107_Act,GO::viral transcription,Act,0.23125,0.55,0.7776967930029155
+1000002596_Act,GO::pancreas development,Act,0.09375,0.57,0.7778808864265927
+1000006109_Act,GO::nucleotide-excision repair; DNA incision,Act,0.125,0.563,0.7778808864265927
+1000008177_Act,GO::response to cytokine,Act,0.14375,0.563,0.7778808864265927
+1000005235_Act,GO::interferon-gamma-mediated signaling pathway,Act,0.18125,0.562,0.7778808864265927
+1000002489_Act,GO::cellular response to hydrogen peroxide,Act,0.175,0.555,0.7778808864265927
+1000002545_Act,GO::lipoprotein metabolic process,Act,0.0875,0.569,0.7778808864265927
+1000007548_Act,GO::positive regulation of endocytosis,Act,0.09375,0.578,0.7778808864265927
+1000004590_Act,GO::myelination,Act,0.14375,0.579,0.7778808864265927
+1000006303_Act,GO::negative regulation of apoptotic process,Act,0.45625,0.564,0.7778808864265927
+1000003264_Act,GO::ATP hydrolysis coupled cation transmembrane transport,Act,0.10625,0.579,0.7778808864265927
+1000008116_Act,GO::retinoid metabolic process,Act,0.16875,0.577,0.7778808864265927
+1000003522_Act,GO::positive regulation of cell cycle,Act,0.15,0.576,0.7778808864265927
+1000004547_Act,GO::regulation of protein phosphorylation,Act,0.13125,0.561,0.7778808864265927
+1000003917_Act,GO::tRNA modification,Act,0.10625,0.579,0.7778808864265927
+1000004070_Act,GO::tricarboxylic acid cycle,Act,0.11875,0.555,0.7778808864265927
+1000004076_Act,GO::gluconeogenesis,Act,0.1375,0.566,0.7778808864265927
+1000004152_Act,GO::intrinsic apoptotic signaling pathway in response to endoplasmic reticulum stress,Act,0.1125,0.567,0.7778808864265927
+1000007431_Act,GO::negative regulation of inflammatory response,Act,0.23125,0.557,0.7778808864265927
+1000004183_Act,GO::fibroblast migration,Act,0.0625,0.563,0.7778808864265927
+1000002019_Act,GO::long-chain fatty acid metabolic process,Act,0.09375,0.578,0.7778808864265927
+1000001848_Act,GO::ventricular septum development,Act,0.10625,0.579,0.7778808864265927
+1000000388_Act,GO::activation of cysteine-type endopeptidase activity involved in apoptotic process,Act,0.19375,0.573,0.7778808864265927
+1000008385_Act,GO::autophagosome maturation,Act,0.10625,0.579,0.7778808864265927
+1000009285_Act,humanCyc::D-myo-inositol-5-phosphate,Act,0.0875,0.566,0.7778808864265927
+1000005131_Act,GO::antigen processing and presentation,Act,0.0875,0.569,0.7778808864265927
+1000009226_Act,kegg::Legionellosis - Homo sapiens (human),Act,0.15625,0.559,0.7778808864265927
+1000000785_Act,GO::positive regulation of vascular smooth muscle cell proliferation,Act,0.14375,0.579,0.7778808864265927
+1000003310_Act,GO::positive regulation of DNA-binding transcription factor activity,Act,0.23125,0.566,0.7778808864265927
+1000000867_Act,GO::retrograde axonal transport,Act,0.0625,0.563,0.7778808864265927
+1000009100_Act,kegg::AMPK signaling pathway - Homo sapiens (human),Act,0.2375,0.565,0.7778808864265927
+1000005329_Act,GO::reactive oxygen species metabolic process,Act,0.1125,0.567,0.7778808864265927
+1000000963_Act,GO::membrane depolarization,Act,0.09375,0.558,0.7778808864265927
+1000000937_Act,GO::negative regulation of autophagy,Act,0.14375,0.579,0.7778808864265927
+1000008424_Act,GO::nucleotide-excision repair; DNA duplex unwinding,Act,0.09375,0.558,0.7778808864265927
+1000001782_Act,GO::positive regulation of natural killer cell mediated cytotoxicity,Act,0.09375,0.558,0.7778808864265927
+1000008589_Act,GO::cellular protein metabolic process,Act,0.3375,0.552,0.7778808864265927
+1000009058_Act,kegg::Spliceosome - Homo sapiens (human),Act,0.25,0.588,0.7783626522327469
+1000009053_Act,kegg::mRNA surveillance pathway - Homo sapiens (human),Act,0.2,0.593,0.7783626522327469
+1000000176_Act,GO::rRNA processing,Act,0.25625,0.589,0.7783626522327469
+1000006759_Act,GO::DNA repair,Act,0.325,0.585,0.7783626522327469
+1000006938_Act,GO::canonical Wnt signaling pathway,Act,0.18125,0.586,0.7783626522327469
+1000008999_Act,kegg::Selenocompound metabolism - Homo sapiens (human),Act,0.08125,0.593,0.7783626522327469
+1000003575_Act,GO::positive regulation of phagocytosis,Act,0.1375,0.583,0.7783626522327469
+1000009146_Act,kegg::Fc gamma R-mediated phagocytosis - Homo sapiens (human),Act,0.2,0.593,0.7783626522327469
+1000004247_Act,GO::mRNA processing,Act,0.26875,0.586,0.7783626522327469
+1000008535_Act,GO::regulation of translation,Act,0.15,0.593,0.7783626522327469
+1000002172_Act,GO::astrocyte development,Act,0.08125,0.593,0.7783626522327469
+1000000390_Act,GO::apoptotic process,Act,0.46875,0.581,0.7783626522327469
+1000007708_Act,GO::DNA replication,Act,0.25,0.592,0.7783626522327469
+1000001333_Act,GO::cell-cell signaling,Act,0.33125,0.585,0.7783626522327469
+1000005375_Act,GO::regulation of insulin receptor signaling pathway,Act,0.06875,0.585,0.7783626522327469
+1000005711_Act,GO::Wnt signaling pathway; planar cell polarity pathway,Act,0.2,0.584,0.7783626522327469
+1000005780_Act,GO::mitochondrial translational termination,Act,0.2,0.592,0.7783626522327469
+1000004690_Act,GO::negative regulation of neuron differentiation,Act,0.15625,0.594,0.7786216216216216
+1000003876_Act,GO::phosphorylation,Act,0.20625,0.597,0.7806998654104979
+1000008849_Act,GO::transcription by RNA polymerase III,Act,0.1125,0.598,0.7806998654104979
+1000004020_Act,GO::response to testosterone,Act,0.1125,0.598,0.7806998654104979
+1000000183_Act,GO::regulation of transforming growth factor beta receptor signaling pathway,Act,0.0875,0.6,0.782258064516129
+1000008431_Act,GO::peptide cross-linking,Act,0.14375,0.604,0.7832620320855614
+1000001262_Act,GO::sphingolipid biosynthetic process,Act,0.14375,0.604,0.7832620320855614
+1000009093_Act,kegg::Protein processing in endoplasmic reticulum - Homo sapiens (human),Act,0.275,0.604,0.7832620320855614
+1000008316_Act,GO::protein kinase B signaling,Act,0.125,0.603,0.7832620320855614
+1000004499_Act,GO::cell redox homeostasis,Act,0.18125,0.605,0.7835113484646195
+1000009055_Act,kegg::RNA polymerase - Homo sapiens (human),Act,0.10625,0.61,0.7841469816272966
+1000007754_Act,GO::oogenesis,Act,0.1,0.612,0.7841469816272966
+1000006422_Act,GO::apoptotic cell clearance,Act,0.08125,0.616,0.7841469816272966
+1000002091_Act,GO::regulation of transcription by RNA polymerase III,Act,0.0625,0.615,0.7841469816272966
+1000009249_Act,kegg::Chemical carcinogenesis - Homo sapiens (human),Act,0.1875,0.616,0.7841469816272966
+1000001789_Act,GO::androgen biosynthetic process,Act,0.0625,0.615,0.7841469816272966
+1000006558_Act,GO::cytokine production,Act,0.1,0.612,0.7841469816272966
+1000005603_Act,GO::cholesterol metabolic process,Act,0.16875,0.616,0.7841469816272966
+1000007432_Act,GO::positive regulation of inflammatory response,Act,0.1875,0.616,0.7841469816272966
+1000000099_Act,GO::cellular response to DNA damage stimulus,Act,0.3375,0.616,0.7841469816272966
+1000005058_Act,GO::response to interferon-alpha,Act,0.0625,0.615,0.7841469816272966
+1000000389_Act,GO::autophagy,Act,0.225,0.609,0.7841469816272966
+1000002065_Act,GO::pituitary gland development,Act,0.1,0.612,0.7841469816272966
+1000000111_Act,GO::peptidyl-serine phosphorylation,Act,0.25625,0.624,0.7893880208333334
+1000000016_Act,GO::animal organ regeneration,Act,0.13125,0.625,0.7893880208333334
+1000002775_Act,GO::glutamate secretion,Act,0.1,0.621,0.7893880208333334
+1000000287_Act,GO::regulation of megakaryocyte differentiation,Act,0.16875,0.623,0.7893880208333334
+1000003074_Act,GO::cell development,Act,0.13125,0.625,0.7893880208333334
+1000009135_Act,kegg::Cytosolic DNA-sensing pathway - Homo sapiens (human),Act,0.1625,0.622,0.7893880208333334
+1000009094_Act,kegg::Lysosome - Homo sapiens (human),Act,0.23125,0.63,0.7946684005201561
+1000003375_Act,GO::neutrophil chemotaxis,Act,0.1875,0.636,0.7960258064516129
+1000000964_Act,GO::negative regulation of protein kinase B signaling,Act,0.15625,0.635,0.7960258064516129
+1000000936_Act,GO::regulation of autophagy,Act,0.1625,0.636,0.7960258064516129
+1000004723_Act,GO::positive regulation of protein tyrosine kinase activity,Act,0.11875,0.635,0.7960258064516129
+1000002386_Act,GO::positive regulation of interleukin-6 production,Act,0.15,0.635,0.7960258064516129
+1000002161_Act,GO::regulation of alternative mRNA splicing; via spliceosome,Act,0.1625,0.636,0.7960258064516129
+1000007814_Act,GO::positive regulation of T cell proliferation,Act,0.15,0.637,0.79625
+1000006315_Act,GO::innate immune response,Act,0.4375,0.638,0.7964736164736165
+1000006536_Act,GO::meiotic cell cycle,Act,0.1625,0.641,0.7981643132220796
+1000006697_Act,GO::intrinsic apoptotic signaling pathway in response to DNA damage,Act,0.13125,0.641,0.7981643132220796
+1000007181_Act,GO::protein autoprocessing,Act,0.075,0.642,0.7983846153846154
+1000003454_Act,GO::cellular response to lipopolysaccharide,Act,0.26875,0.646,0.7994777070063694
+1000007919_Act,GO::cellular iron ion homeostasis,Act,0.15,0.646,0.7994777070063694
+1000009189_Act,kegg::Non-alcoholic fatty liver disease (NAFLD) - Homo sapiens (human),Act,0.25625,0.647,0.7994777070063694
+1000001332_Act,GO::chemical synaptic transmission,Act,0.33125,0.647,0.7994777070063694
+1000009083_Act,kegg::Neuroactive ligand-receptor interaction - Homo sapiens (human),Act,0.3875,0.645,0.7994777070063694
+1000004458_Act,GO::SRP-dependent cotranslational protein targeting to membrane,Act,0.19375,0.648,0.7996946564885496
+1000008277_Act,GO::response to cAMP,Act,0.13125,0.654,0.8060736975857687
+1000001001_Act,GO::glycosphingolipid metabolic process,Act,0.11875,0.655,0.8062817258883249
+1000004303_Act,GO::global genome nucleotide-excision repair,Act,0.09375,0.666,0.8095488721804512
+1000003224_Act,GO::cellular response to thyroid hormone stimulus,Act,0.06875,0.661,0.8095488721804512
+1000007996_Act,GO::telomere maintenance via telomerase,Act,0.0875,0.665,0.8095488721804512
+1000002143_Act,GO::atrial septum morphogenesis,Act,0.06875,0.661,0.8095488721804512
+1000008733_Act,GO::acute-phase response,Act,0.1125,0.666,0.8095488721804512
+1000002471_Act,GO::receptor internalization,Act,0.11875,0.662,0.8095488721804512
+1000002413_Act,GO::nucleotide-excision repair; DNA incision; 5'-to lesion,Act,0.1125,0.666,0.8095488721804512
+1000008052_Act,GO::proximal/distal pattern formation,Act,0.0875,0.665,0.8095488721804512
+1000002948_Act,GO::response to toxic substance,Act,0.1625,0.66,0.8095488721804512
+1000009017_Act,kegg::Glycerophospholipid metabolism - Homo sapiens (human),Act,0.2,0.664,0.8095488721804512
+1000002923_Act,GO::negative regulation of canonical Wnt signaling pathway,Act,0.275,0.667,0.8097496871088862
+1000003019_Act,GO::peroxisome organization,Act,0.08125,0.676,0.8117305315203955
+1000000781_Act,GO::chromatin organization,Act,0.25625,0.677,0.8117305315203955
+1000000646_Act,GO::neutrophil degranulation,Act,0.4375,0.671,0.8117305315203955
+1000002554_Act,GO::histone deacetylation,Act,0.1125,0.672,0.8117305315203955
+1000001375_Act,GO::Wnt signaling pathway,Act,0.2875,0.676,0.8117305315203955
+1000004701_Act,GO::protein K63-linked deubiquitination,Act,0.1,0.675,0.8117305315203955
+1000003542_Act,GO::endoplasmic reticulum unfolded protein response,Act,0.11875,0.677,0.8117305315203955
+1000002508_Act,GO::antimicrobial humoral response,Act,0.14375,0.67,0.8117305315203955
+1000006780_Act,GO::intracellular signal transduction,Act,0.4,0.674,0.8117305315203955
+1000008539_Act,GO::translational initiation,Act,0.2375,0.673,0.8117305315203955
+1000006707_Act,GO::lipoprotein transport,Act,0.0875,0.678,0.8119259259259259
+1000009244_Act,kegg::Epstein-Barr virus infection - Homo sapiens (human),Act,0.3,0.679,0.8121208384710235
+1000009118_Act,kegg::Osteoclast differentiation - Homo sapiens (human),Act,0.23125,0.68,0.8122860635696822
+1000000409_Act,GO::Rab protein signal transduction,Act,0.16875,0.685,0.8122860635696822
+1000002958_Act,GO::T cell costimulation,Act,0.1375,0.683,0.8122860635696822
+1000004488_Act,GO::telomere maintenance,Act,0.125,0.685,0.8122860635696822
+1000000825_Act,GO::electron transport chain,Act,0.16875,0.685,0.8122860635696822
+1000004288_Act,GO::SMAD protein signal transduction,Act,0.14375,0.681,0.8122860635696822
+1000003382_Act,GO::vesicle budding from membrane,Act,0.0625,0.684,0.8122860635696822
+1000001566_Act,GO::Fc-epsilon receptor signaling pathway,Act,0.26875,0.689,0.816031746031746
+1000003875_Act,GO::dephosphorylation,Act,0.18125,0.69,0.8162195121951219
+1000001373_Act,GO::oxidation-reduction process,Act,0.45,0.694,0.8199512789281364
+1000000018_Act,GO::defense response to Gram-positive bacterium,Act,0.19375,0.697,0.821219806763285
+1000001626_Act,GO::biomineral tissue development,Act,0.1,0.701,0.821219806763285
+1000009122_Act,kegg::ECM-receptor interaction - Homo sapiens (human),Act,0.18125,0.698,0.821219806763285
+1000004194_Act,GO::synaptic vesicle priming,Act,0.06875,0.7,0.821219806763285
+1000009044_Act,kegg::Aminoacyl-tRNA biosynthesis - Homo sapiens (human),Act,0.15625,0.699,0.821219806763285
+1000002076_Act,GO::transcription; DNA-templated,Act,0.2,0.701,0.821219806763285
+1000005355_Act,GO::negative regulation of T cell receptor signaling pathway,Act,0.08125,0.7,0.821219806763285
+1000001279_Act,GO::ubiquitin-dependent protein catabolic process,Act,0.35,0.702,0.8213992762364294
+1000001655_Act,GO::spermatogenesis,Act,0.4125,0.703,0.821578313253012
+1000009239_Act,kegg::Influenza A - Homo sapiens (human),Act,0.26875,0.704,0.8217569193742479
+1000007625_Act,GO::chaperone cofactor-dependent protein refolding,Act,0.1,0.708,0.8244417767106843
+1000006297_Act,GO::cellular amino acid metabolic process,Act,0.1,0.708,0.8244417767106843
+1000009138_Act,kegg::Hematopoietic cell lineage - Homo sapiens (human),Act,0.19375,0.711,0.8262962962962962
+1000006462_Act,GO::carbohydrate metabolic process,Act,0.2125,0.713,0.8262962962962962
+1000009022_Act,kegg::Sphingolipid metabolism - Homo sapiens (human),Act,0.125,0.713,0.8262962962962962
+1000008139_Act,GO::regulation of cell proliferation,Act,0.23125,0.713,0.8262962962962962
+1000002641_Act,GO::negative regulation of interferon-gamma production,Act,0.09375,0.714,0.8264677804295942
+1000004713_Act,GO::defense response to Gram-negative bacterium,Act,0.18125,0.716,0.8268095238095238
+1000002499_Act,GO::response to glucose,Act,0.15625,0.716,0.8268095238095238
+1000009275_Act,kegg::Rheumatoid arthritis - Homo sapiens (human),Act,0.1875,0.719,0.8273190984578884
+1000005452_Act,GO::JAK-STAT cascade,Act,0.09375,0.719,0.8273190984578884
+1000001678_Act,GO::ER to Golgi vesicle-mediated transport,Act,0.2875,0.718,0.8273190984578884
+1000001564_Act,GO::Fc-gamma receptor signaling pathway involved in phagocytosis,Act,0.23125,0.723,0.8281603773584906
+1000004268_Act,GO::negative regulation of I-kappaB kinase/NF-kappaB signaling,Act,0.125,0.724,0.8281603773584906
+1000002182_Act,GO::killing of cells of other organism,Act,0.1125,0.724,0.8281603773584906
+1000008955_Act,GO::positive regulation of osteoclast differentiation,Act,0.08125,0.721,0.8281603773584906
+1000007098_Act,GO::response to nicotine,Act,0.1125,0.724,0.8281603773584906
+1000009042_Act,kegg::Nitrogen metabolism - Homo sapiens (human),Act,0.075,0.729,0.8328975265017667
+1000009052_Act,kegg::RNA transport - Homo sapiens (human),Act,0.25625,0.733,0.834518779342723
+1000005578_Act,GO::PERK-mediated unfolded protein response,Act,0.0625,0.733,0.834518779342723
+1000002507_Act,GO::cytokine-mediated signaling pathway,Act,0.34375,0.733,0.834518779342723
+1000007800_Act,GO::negative regulation of phosphoprotein phosphatase activity,Act,0.125,0.74,0.8377272727272728
+1000005499_Act,GO::protein refolding,Act,0.10625,0.739,0.8377272727272728
+1000001189_Act,GO::snRNA transcription by RNA polymerase II,Act,0.15625,0.741,0.8377272727272728
+1000009273_Act,kegg::Inflammatory bowel disease (IBD) - Homo sapiens (human),Act,0.15,0.738,0.8377272727272728
+1000002682_Act,GO::regulation of macroautophagy,Act,0.1625,0.741,0.8377272727272728
+1000008149_Act,GO::positive regulation of blood vessel endothelial cell migration,Act,0.125,0.74,0.8377272727272728
+1000001306_Act,GO::negative regulation of extrinsic apoptotic signaling pathway in absence of ligand,Act,0.10625,0.747,0.8397685185185184
+1000005237_Act,GO::type I interferon signaling pathway,Act,0.15,0.744,0.8397685185185184
+1000003339_Act,GO::actin filament organization,Act,0.18125,0.748,0.8397685185185184
+1000001682_Act,GO::intracellular protein transport,Act,0.35625,0.747,0.8397685185185184
+1000002951_Act,GO::cellular oxidant detoxification,Act,0.16875,0.748,0.8397685185185184
+1000009057_Act,kegg::DNA replication - Homo sapiens (human),Act,0.10625,0.747,0.8397685185185184
+1000008267_Act,GO::response to wounding,Act,0.15,0.752,0.8432832369942196
+1000009237_Act,kegg::Measles - Homo sapiens (human),Act,0.225,0.763,0.8546304849884526
+1000005774_Act,GO::multicellular organism development,Act,0.4125,0.764,0.8547635524798154
+1000000358_Act,GO::phospholipid metabolic process,Act,0.14375,0.767,0.85713133640553
+1000006166_Act,GO::intracellular receptor signaling pathway,Act,0.1,0.768,0.8572612197928653
+1000009234_Act,kegg::Tuberculosis - Homo sapiens (human),Act,0.26875,0.775,0.8624685714285715
+1000004696_Act,GO::negative regulation of myoblast differentiation,Act,0.08125,0.778,0.8624685714285715
+1000003651_Act,GO::telomere maintenance via semi-conservative replication,Act,0.08125,0.778,0.8624685714285715
+1000003392_Act,GO::DNA replication initiation,Act,0.09375,0.775,0.8624685714285715
+1000005772_Act,GO::synaptic transmission; cholinergic,Act,0.08125,0.778,0.8624685714285715
+1000000821_Act,GO::cell chemotaxis,Act,0.15625,0.777,0.8624685714285715
+1000008229_Act,GO::branching morphogenesis of an epithelial tube,Act,0.08125,0.781,0.8648059360730593
+1000003457_Act,GO::toll-like receptor signaling pathway,Act,0.1125,0.782,0.8649258836944128
+1000001583_Act,GO::positive regulation of cell growth,Act,0.1625,0.79,0.8698070374574348
+1000007148_Act,GO::calcium-mediated signaling,Act,0.1625,0.79,0.8698070374574348
+1000005312_Act,GO::regulation of MAPK cascade,Act,0.13125,0.79,0.8698070374574348
+1000000060_Act,GO::lipid metabolic process,Act,0.21875,0.789,0.8698070374574348
+1000009142_Act,kegg::Th17 cell differentiation - Homo sapiens (human),Act,0.19375,0.791,0.869920634920635
+1000005336_Act,GO::monocyte chemotaxis,Act,0.1125,0.795,0.8733295583238959
+1000006883_Act,GO::negative regulation of cell adhesion,Act,0.11875,0.796,0.8734389140271493
+1000004072_Act,GO::generation of precursor metabolites and energy,Act,0.125,0.797,0.8735480225988701
+1000008979_Act,kegg::Oxidative phosphorylation - Homo sapiens (human),Act,0.21875,0.802,0.8760585585585586
+1000007822_Act,GO::negative regulation of blood pressure,Act,0.0875,0.802,0.8760585585585586
+1000003174_Act,GO::B cell activation,Act,0.0875,0.802,0.8760585585585586
+1000007192_Act,GO::ubiquitin-dependent ERAD pathway,Act,0.1375,0.803,0.8761642294713162
+1000001652_Act,GO::protein heterotetramerization,Act,0.125,0.808,0.8806292134831462
+1000000048_Act,GO::folic acid metabolic process,Act,0.075,0.813,0.885084175084175
+1000005719_Act,GO::cholesterol biosynthetic process,Act,0.10625,0.814,0.8851793721973094
+1000006989_Act,GO::negative regulation of Wnt signaling pathway,Act,0.1125,0.819,0.889619260918253
+1000007878_Act,GO::protein folding,Act,0.225,0.826,0.8962192393736018
+1000001725_Act,GO::toxin transport,Act,0.1,0.827,0.8963016759776535
+1000000930_Act,GO::negative regulation of interleukin-10 production,Act,0.0625,0.83,0.8985491071428571
+1000000417_Act,GO::positive regulation of cytosolic calcium ion concentration,Act,0.23125,0.831,0.8986287625418059
+1000004338_Act,GO::cellular response to platelet-derived growth factor stimulus,Act,0.075,0.832,0.898708240534521
+1000006502_Act,GO::mRNA splicing; via spliceosome,Act,0.29375,0.834,0.8998665183537263
+1000005472_Act,GO::cellular response to epidermal growth factor stimulus,Act,0.10625,0.841,0.9064111111111111
+1000003333_Act,GO::regulation of signaling receptor activity,Act,0.39375,0.848,0.9129411764705881
+1000001121_Act,GO::positive regulation of pathway-restricted SMAD protein phosphorylation,Act,0.1125,0.85,0.914079822616408
+1000005134_Act,GO::antigen processing and presentation of exogenous peptide antigen via MHC class II,Act,0.175,0.855,0.91843853820598
+1000002686_Act,GO::positive regulation of interleukin-10 production,Act,0.075,0.858,0.920641592920354
+1000000868_Act,GO::retrograde transport; endosome to plasma membrane,Act,0.06875,0.864,0.921980198019802
+1000009019_Act,kegg::Arachidonic acid metabolism - Homo sapiens (human),Act,0.13125,0.861,0.921980198019802
+1000008012_Act,GO::keratinocyte differentiation,Act,0.14375,0.864,0.921980198019802
+1000004522_Act,GO::protein tetramerization,Act,0.09375,0.864,0.921980198019802
+1000001303_Act,GO::positive regulation of intrinsic apoptotic signaling pathway,Act,0.09375,0.864,0.921980198019802
+1000002077_Act,GO::DNA-templated transcription; initiation,Act,0.0875,0.868,0.9252307692307692
+1000006469_Act,GO::translation,Act,0.25,0.874,0.9295833333333333
+1000002921_Act,GO::negative regulation of gene expression; epigenetic,Act,0.11875,0.874,0.9295833333333333
+1000000393_Act,GO::phagocytosis; engulfment,Act,0.15625,0.875,0.9296276013143483
+1000000661_Act,GO::regulation of endocytosis,Act,0.0875,0.876,0.929671772428884
+1000006311_Act,GO::positive regulation of innate immune response,Act,0.075,0.878,0.930775956284153
+1000001955_Act,GO::spliceosomal tri-snRNP complex assembly,Act,0.08125,0.879,0.9308187772925764
+1000005887_Act,GO::ubiquinone biosynthetic process,Act,0.0625,0.881,0.9319193020719738
+1000001487_Act,GO::regulation of cyclin-dependent protein serine/threonine kinase activity,Act,0.11875,0.884,0.9340740740740742
+1000002083_Act,GO::response to interferon-gamma,Act,0.075,0.888,0.9372796517954298
+1000002765_Act,GO::neuron development,Act,0.1125,0.89,0.9373507057546147
+1000000640_Act,GO::nervous system process,Act,0.1125,0.89,0.9373507057546147
+1000008975_Act,kegg::Steroid biosynthesis - Homo sapiens (human),Act,0.06875,0.894,0.9385064935064936
+1000008189_Act,GO::protein maturation,Act,0.06875,0.894,0.9385064935064936
+1000008445_Act,GO::regulation of reactive oxygen species metabolic process,Act,0.06875,0.894,0.9385064935064936
+1000007241_Act,GO::morphogenesis of an epithelium,Act,0.0625,0.899,0.9427351351351351
+1000008978_Act,kegg::Steroid hormone biosynthesis - Homo sapiens (human),Act,0.11875,0.903,0.9459071274298055
+1000008500_Act,GO::leukocyte migration,Act,0.25,0.905,0.9469795037756202
+1000006607_Act,GO::ceramide biosynthetic process,Act,0.08125,0.909,0.9501400862068965
+1000000723_Act,GO::smoothened signaling pathway,Act,0.125,0.911,0.951205597416577
+1000002462_Act,GO::female pregnancy,Act,0.15,0.916,0.9543716433941998
+1000009051_Act,kegg::Ribosome - Homo sapiens (human),Act,0.2125,0.916,0.9543716433941998
+1000005874_Act,GO::one-carbon metabolic process,Act,0.06875,0.918,0.9554291845493562
+1000002509_Act,GO::antibacterial humoral response,Act,0.0875,0.922,0.9575374732334048
+1000000206_Act,GO::cristae formation,Act,0.08125,0.922,0.9575374732334048
+1000005314_Act,GO::protein peptidyl-prolyl isomerization,Act,0.09375,0.924,0.9585882352941176
+1000009233_Act,kegg::Staphylococcus aureus infection - Homo sapiens (human),Act,0.125,0.927,0.9606730769230769
+1000003828_Act,GO::response to unfolded protein,Act,0.10625,0.928,0.96068303094984
+1000001057_Act,GO::interleukin-7-mediated signaling pathway,Act,0.08125,0.935,0.9658679446219383
+1000006289_Act,GO::positive regulation of smoothened signaling pathway,Act,0.08125,0.935,0.9658679446219383
+1000003385_Act,GO::positive regulation of phosphorylation,Act,0.075,0.94,0.97
+1000007776_Act,GO::ovarian follicle development,Act,0.0875,0.943,0.9720616365568544
+1000009243_Act,kegg::Herpes simplex virus 1 infection - Homo sapiens (human),Act,0.38125,0.946,0.9741188959660296
+1000004850_Act,GO::positive regulation of T cell mediated cytotoxicity,Act,0.06875,0.948,0.9751377118644068
+1000006012_Act,GO::positive regulation of neutrophil chemotaxis,Act,0.06875,0.949,0.9751377118644068
+1000005858_Act,GO::liver regeneration,Act,0.08125,0.953,0.9782116402116402
+1000009210_Act,kegg::Parkinson disease - Homo sapiens (human),Act,0.19375,0.956,0.9792185850052798
+1000007738_Act,GO::defense response to bacterium,Act,0.225,0.955,0.9792185850052798
+1000009046_Act,kegg::Drug metabolism - cytochrome P450 - Homo sapiens (human),Act,0.125,0.96,0.9822784810126582
+1000004355_Act,GO::cornification,Act,0.15625,0.962,0.9832736842105263
+1000008738_Act,GO::inflammatory response,Act,0.325,0.963,0.9832736842105263
+1000003268_Act,GO::biological-process,Act,0.40625,0.965,0.984279705573081
+1000009274_Act,kegg::Systemic lupus erythematosus - Homo sapiens (human),Act,0.18125,0.968,0.9852675760755509
+1000007586_Act,GO::antimicrobial humoral immune response mediated by antimicrobial peptide,Act,0.1125,0.968,0.9852675760755509
+1000003870_Act,GO::CENP-A containing nucleosome assembly,Act,0.0875,0.975,0.9913522012578617
+1000005193_Act,GO::nucleosome assembly,Act,0.15,0.979,0.993336820083682
+1000006171_Act,GO::negative regulation of blood vessel endothelial cell proliferation involved in sprouting angiogenesis,Act,0.06875,0.978,0.993336820083682
+1000000461_Act,GO::nuclear-transcribed mRNA poly(A) tail shortening,Act,0.0625,0.982,0.9953396029258098
+1000009039_Act,kegg::Retinol metabolism - Homo sapiens (human),Act,0.10625,0.986,0.9983507306889352
+1000008401_Act,GO::adaptive immune response,Act,0.23125,1.0,1.0
+1000005194_Act,GO::DNA replication-dependent nucleosome assembly,Act,0.06875,0.992,1.0
+1000008700_Act,GO::sensory perception of smell,Act,0.15625,0.999,1.0
+1000009075_Act,kegg::Cytokine-cytokine receptor interaction - Homo sapiens (human),Act,0.2625,0.995,1.0
+1000003776_Act,GO::regulation of immune response,Act,0.20625,1.0,1.0
+1000008739_Act,GO::immune response,Act,0.31875,0.994,1.0
+1000004246_Act,GO::RNA processing,Act,0.2375,1.0,1.0
+1000009130_Act,kegg::Antigen processing and presentation - Homo sapiens (human),Act,0.1125,0.989,1.0
+1000000833_Act,GO::gene silencing by miRNA,Act,0.26875,1.0,1.0
+1000009163_Act,kegg::Olfactory transduction - Homo sapiens (human),Act,0.25625,1.0,1.0
+1000007935_Act,GO::keratinization,Act,0.15625,1.0,1.0
+1000007531_Act,GO::detection of chemical stimulus involved in sensory perception of smell,Act,0.2125,1.0,1.0

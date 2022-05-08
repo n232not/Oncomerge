@@ -1,0 +1,248 @@
+,Symbol,Type,Freq,Emp.p_value,q_value
+1000002791_LoF,GO::replicative senescence,LoF,0.625,0.0,0.0
+1000009256_LoF,kegg::Glioma - Homo sapiens (human),LoF,0.7,0.0,0.0
+1000005480_LoF,GO::negative regulation of cell-matrix adhesion,LoF,0.625,0.0,0.0
+1029_LoF,CDKN2A,LoF,0.475,0.0002,0.0036000000000000003
+8314_LoF,BAP1,LoF,0.4,0.0037,0.0222
+4771_LoF,NF2,LoF,0.3375,0.0037,0.0222
+283748_LoF,PLA2G4D,LoF,0.0625,0.0212,0.023850000000000003
+1133_LoF,CHRM5,LoF,0.0625,0.0212,0.023850000000000003
+6263_LoF,RYR3,LoF,0.075,0.0139,0.023850000000000003
+51332_LoF,SPTBN5,LoF,0.0625,0.0212,0.023850000000000003
+23269_LoF,MGA,LoF,0.0875,0.0118,0.023850000000000003
+79094_LoF,CHAC1,LoF,0.0625,0.0212,0.023850000000000003
+5888_LoF,RAD51,LoF,0.0625,0.0212,0.023850000000000003
+9990_LoF,SLC12A6,LoF,0.0625,0.0212,0.023850000000000003
+5330_LoF,PLCB2,LoF,0.075,0.0139,0.023850000000000003
+825_LoF,CAPN3,LoF,0.075,0.0139,0.023850000000000003
+23005_LoF,MAPKBP1,LoF,0.075,0.0139,0.023850000000000003
+9716_LoF,AQR,LoF,0.0625,0.0212,0.023850000000000003
+26524_LoF,LATS2,LoF,0.1,0.0098,0.023850000000000003
+1000009261_LoF,kegg::Bladder cancer - Homo sapiens (human),LoF,0.675,0.001,0.05725
+1000004656_LoF,GO::positive regulation of macrophage apoptotic process,LoF,0.475,0.002,0.06542857142857143
+1000005292_LoF,GO::senescence-associated heterochromatin focus assembly,LoF,0.475,0.002,0.06542857142857143
+1000006831_LoF,GO::negative regulation of cell proliferation,LoF,0.9125,0.002,0.06542857142857143
+5728_LoF,PTEN,LoF,0.05,0.0751,0.0751
+23345_LoF,SYNE1,LoF,0.05,0.0751,0.0751
+1000004893_LoF,GO::positive regulation of smooth muscle cell apoptotic process,LoF,0.4875,0.004,0.10177777777777777
+1000009254_LoF,kegg::Pancreatic cancer - Homo sapiens (human),LoF,0.6875,0.004,0.10177777777777777
+1000001335_LoF,GO::Ras protein signal transduction,LoF,0.7,0.005,0.1145
+1000006348_LoF,GO::response to inorganic substance,LoF,0.4,0.012,0.13085714285714284
+1000006360_LoF,GO::regulation of protein localization to nucleus,LoF,0.3375,0.012,0.13085714285714284
+1000006521_LoF,GO::regulation of gliogenesis,LoF,0.35,0.01,0.13085714285714284
+1000009262_LoF,kegg::Chronic myeloid leukemia - Homo sapiens (human),LoF,0.6875,0.01,0.13085714285714284
+1000005870_LoF,GO::nicotinamide riboside catabolic process,LoF,0.4125,0.007,0.13085714285714284
+1000009265_LoF,kegg::Non-small cell lung cancer - Homo sapiens (human),LoF,0.675,0.01,0.13085714285714284
+1000005552_LoF,GO::male mating behavior,LoF,0.3125,0.012,0.13085714285714284
+1000006726_LoF,GO::regulation of cytokine production involved in inflammatory response,LoF,0.4,0.012,0.13085714285714284
+1000003594_LoF,GO::regulation of hippo signaling,LoF,0.425,0.01,0.13085714285714284
+1000009260_LoF,kegg::Melanoma - Homo sapiens (human),LoF,0.675,0.012,0.13085714285714284
+1000002736_LoF,GO::monoubiquitinated histone H2A deubiquitination,LoF,0.4125,0.011,0.13085714285714284
+1000003386_LoF,GO::negative regulation of phosphorylation,LoF,0.475,0.022,0.18810714285714286
+1000002734_LoF,GO::monoubiquitinated protein deubiquitination,LoF,0.4,0.021,0.18810714285714286
+1000006563_LoF,GO::positive regulation of cellular senescence,LoF,0.5,0.02,0.18810714285714286
+1000002792_LoF,GO::cellular senescence,LoF,0.5,0.023,0.18810714285714286
+1000007917_LoF,GO::regulation of stem cell proliferation,LoF,0.35,0.021,0.18810714285714286
+1000004008_LoF,GO::cell cycle arrest,LoF,0.75,0.023,0.18810714285714286
+1000009086_LoF,kegg::p53 signaling pathway - Homo sapiens (human),LoF,0.65,0.02,0.18810714285714286
+1000001831_LoF,GO::cellular response to extracellular stimulus,LoF,0.4625,0.026,0.19206451612903225
+1000007185_LoF,GO::negative regulation of cyclin-dependent protein serine/threonine kinase activity,LoF,0.55,0.026,0.19206451612903225
+1000009107_LoF,kegg::Cellular senescence - Homo sapiens (human),LoF,0.7625,0.026,0.19206451612903225
+1000004341_LoF,GO::regulation of neural precursor cell proliferation,LoF,0.3625,0.027,0.19321875
+1000005928_LoF,GO::negative regulation of T-helper 2 cell cytokine production,LoF,0.2125,0.031,0.2151212121212121
+1000004539_LoF,GO::ectoderm development,LoF,0.35,0.04,0.2544444444444444
+1000007065_LoF,GO::muscle structure development,LoF,0.0875,0.04,0.2544444444444444
+1000009120_LoF,kegg::Hippo signaling pathway - multiple species - Homo sapiens (human),LoF,0.5,0.04,0.2544444444444444
+1000009264_LoF,kegg::Small cell lung cancer - Homo sapiens (human),LoF,0.65,0.043,0.2642307692307692
+1000004265_LoF,GO::negative regulation of tyrosine phosphorylation of STAT protein,LoF,0.35,0.045,0.2642307692307692
+1000001891_LoF,GO::protein K48-linked deubiquitination,LoF,0.5,0.045,0.2642307692307692
+1000005839_LoF,GO::mitotic recombination-dependent replication fork processing,LoF,0.075,0.05,0.2780714285714285
+1000002985_LoF,GO::chromosome organization involved in meiotic cell cycle,LoF,0.1125,0.051,0.2780714285714285
+1000006847_LoF,GO::negative regulation of cell-cell adhesion,LoF,0.3625,0.05,0.2780714285714285
+1000002099_LoF,GO::mitotic cell cycle checkpoint,LoF,0.4875,0.056,0.29145454545454547
+1000009267_LoF,kegg::Hepatocellular carcinoma - Homo sapiens (human),LoF,0.75,0.056,0.29145454545454547
+1000003474_LoF,GO::protein deubiquitination involved in ubiquitin-dependent protein catabolic process,LoF,0.1375,0.059,0.3002444444444444
+1000003832_LoF,GO::positive regulation of transforming growth factor beta receptor signaling pathway,LoF,0.4875,0.061,0.30367391304347824
+1000000532_LoF,GO::spleen development,LoF,0.5,0.063,0.3069574468085106
+1000004845_LoF,GO::segment specification,LoF,0.125,0.069,0.3224693877551021
+1000009268_LoF,kegg::Gastric cancer - Homo sapiens (human),LoF,0.7125,0.069,0.3224693877551021
+1000004963_LoF,GO::negative regulation of G1/S transition of mitotic cell cycle,LoF,0.55,0.076,0.34125490196078434
+1000009238_LoF,kegg::Human cytomegalovirus infection - Homo sapiens (human),LoF,0.775,0.075,0.34125490196078434
+1000005311_LoF,GO::negative regulation of MAPK cascade,LoF,0.425,0.085,0.3743269230769231
+1000009084_LoF,kegg::Cell cycle - Homo sapiens (human),LoF,0.6625,0.092,0.3975094339622641
+1000001582_LoF,GO::negative regulation of cell growth,LoF,0.6625,0.096,0.3997090909090909
+1000006901_LoF,GO::positive regulation of protein targeting to mitochondrion,LoF,0.45,0.096,0.3997090909090909
+1000007533_LoF,GO::sensory perception of bitter taste,LoF,0.0875,0.112,0.432953125
+1000002107_LoF,GO::negative regulation of epithelial cell proliferation,LoF,0.5375,0.106,0.432953125
+1000005524_LoF,GO::self proteolysis,LoF,0.1,0.108,0.432953125
+1000002164_LoF,GO::nucleobase-containing compound metabolic process,LoF,0.425,0.121,0.432953125
+1000004418_LoF,GO::presynaptic membrane assembly,LoF,0.15,0.112,0.432953125
+1000007380_LoF,GO::actin cytoskeleton organization,LoF,0.675,0.12,0.432953125
+1000005359_LoF,GO::negative regulation of viral entry into host cell,LoF,0.275,0.114,0.432953125
+1000003463_LoF,GO::regulation of cell growth,LoF,0.5375,0.12,0.432953125
+1000004020_LoF,GO::response to testosterone,LoF,0.4375,0.121,0.432953125
+1000003679_LoF,GO::mitotic chromosome condensation,LoF,0.225,0.124,0.43686153846153847
+1000003978_LoF,GO::regulation of synaptic transmission; GABAergic,LoF,0.2,0.126,0.43718181818181817
+1000002109_LoF,GO::dopamine transport,LoF,0.075,0.13,0.4377941176470588
+1000001610_LoF,GO::regulation of vascular permeability,LoF,0.1375,0.129,0.4377941176470588
+1000002476_LoF,GO::cilium movement involved in cell motility,LoF,0.15,0.149,0.43796250000000003
+1000003385_LoF,GO::positive regulation of phosphorylation,LoF,0.3125,0.148,0.43796250000000003
+1000004381_LoF,GO::regulation of ATPase activity,LoF,0.1125,0.15,0.43796250000000003
+1000000254_LoF,GO::inner dynein arm assembly,LoF,0.1625,0.153,0.43796250000000003
+1000003742_LoF,GO::regulation of autophagosome assembly,LoF,0.1375,0.14,0.43796250000000003
+1000004882_LoF,GO::keratinocyte development,LoF,0.1125,0.15,0.43796250000000003
+1000006311_LoF,GO::positive regulation of innate immune response,LoF,0.225,0.148,0.43796250000000003
+1000007686_LoF,GO::positive regulation of cell adhesion mediated by integrin,LoF,0.175,0.142,0.43796250000000003
+1000001659_LoF,GO::sperm axoneme assembly,LoF,0.1375,0.14,0.43796250000000003
+1000004100_LoF,GO::negative regulation of protein processing,LoF,0.1625,0.153,0.43796250000000003
+1000007420_LoF,GO::G1/S transition of mitotic cell cycle,LoF,0.5875,0.135,0.43796250000000003
+1000001875_LoF,GO::regulation of double-strand break repair via homologous recombination,LoF,0.225,0.15,0.43796250000000003
+1000000122_LoF,GO::histone H3-K4 trimethylation,LoF,0.175,0.159,0.44403658536585366
+1000005629_LoF,GO::regulation of cytokinesis,LoF,0.4,0.159,0.44403658536585366
+1000001547_LoF,GO::protein localization to chromosome; centromeric region,LoF,0.0875,0.166,0.44722352941176474
+1000001950_LoF,GO::leucine catabolic process,LoF,0.0875,0.166,0.44722352941176474
+1000004694_LoF,GO::regulation of myoblast differentiation,LoF,0.0875,0.166,0.44722352941176474
+1000001009_LoF,GO::positive regulation of neuron migration,LoF,0.15,0.174,0.4477078651685393
+1000001487_LoF,GO::regulation of cyclin-dependent protein serine/threonine kinase activity,LoF,0.475,0.174,0.4477078651685393
+1000006593_LoF,GO::negative regulation of cell migration,LoF,0.65,0.174,0.4477078651685393
+1000002565_LoF,GO::protein deubiquitination,LoF,0.775,0.174,0.4477078651685393
+1000007247_LoF,GO::negative regulation of axon extension involved in axon guidance,LoF,0.2625,0.18,0.45296703296703295
+1000009241_LoF,kegg::Human T-cell leukemia virus 1 infection - Homo sapiens (human),LoF,0.7375,0.18,0.45296703296703295
+1000008986_LoF,kegg::Cysteine and methionine metabolism - Homo sapiens (human),LoF,0.4375,0.182,0.45302173913043475
+1000000097_LoF,GO::cardiac muscle tissue morphogenesis,LoF,0.1875,0.191,0.46041052631578944
+1000007357_LoF,GO::regulation of attachment of spindle microtubules to kinetochore,LoF,0.0875,0.191,0.46041052631578944
+1000003747_LoF,GO::voluntary musculoskeletal movement,LoF,0.0875,0.191,0.46041052631578944
+1000001749_LoF,GO::heart trabecula formation,LoF,0.15,0.194,0.46277083333333335
+1000002181_LoF,GO::regulation of protein stability,LoF,0.525,0.205,0.47631999999999997
+1000002598_LoF,GO::negative regulation of cardiac muscle cell proliferation,LoF,0.1875,0.206,0.47631999999999997
+1000009248_LoF,kegg::Viral carcinogenesis - Homo sapiens (human),LoF,0.7,0.208,0.47631999999999997
+1000003647_LoF,GO::Rac protein signal transduction,LoF,0.1875,0.206,0.47631999999999997
+1000006826_LoF,GO::cilium-dependent cell motility,LoF,0.15,0.213,0.482940594059406
+1000007022_LoF,GO::positive regulation of actin cytoskeleton reorganization,LoF,0.1625,0.222,0.4888269230769231
+1000007776_LoF,GO::ovarian follicle development,LoF,0.325,0.22,0.4888269230769231
+1000009114_LoF,kegg::TGF-beta signaling pathway - Homo sapiens (human),LoF,0.5375,0.218,0.4888269230769231
+1000000728_LoF,GO::negative regulation of NF-kappaB transcription factor activity,LoF,0.525,0.228,0.49256603773584906
+1000008213_LoF,GO::hippo signaling,LoF,0.25,0.228,0.49256603773584906
+1000008762_LoF,GO::startle response,LoF,0.125,0.235,0.4937155963302752
+1000004156_LoF,GO::cellular response to insulin-like growth factor stimulus,LoF,0.1,0.233,0.4937155963302752
+1000006137_LoF,GO::telomere maintenance via telomere lengthening,LoF,0.1,0.233,0.4937155963302752
+1000007566_LoF,GO::stem cell differentiation,LoF,0.25,0.239,0.4938434782608696
+1000001019_LoF,GO::positive regulation of cell migration involved in sprouting angiogenesis,LoF,0.3,0.246,0.4938434782608696
+1000008284_LoF,GO::semaphorin-plexin signaling pathway,LoF,0.275,0.248,0.4938434782608696
+1000009079_LoF,kegg::FoxO signaling pathway - Homo sapiens (human),LoF,0.6125,0.242,0.4938434782608696
+1000002433_LoF,GO::response to exogenous dsRNA,LoF,0.275,0.244,0.4938434782608696
+1000006016_LoF,GO::positive regulation of sprouting angiogenesis,LoF,0.2125,0.24,0.4938434782608696
+1000007538_LoF,GO::negative chemotaxis,LoF,0.2875,0.268,0.5157310924369748
+1000007813_LoF,GO::B cell proliferation,LoF,0.2625,0.268,0.5157310924369748
+1000005133_LoF,GO::antigen processing and presentation of endogenous peptide antigen via MHC class I,LoF,0.075,0.264,0.5157310924369748
+1000003984_LoF,GO::histone H3-K4 methylation,LoF,0.1875,0.265,0.5157310924369748
+1000007320_LoF,GO::methylation,LoF,0.4375,0.272,0.5166694214876033
+1000000340_LoF,GO::adenylate cyclase-inhibiting G protein-coupled acetylcholine receptor signaling pathway,LoF,0.0875,0.273,0.5166694214876033
+1000000598_LoF,GO::cardiac atrium morphogenesis,LoF,0.075,0.293,0.5407923076923077
+1000009191_LoF,kegg::Cushing syndrome - Homo sapiens (human),LoF,0.6375,0.289,0.5407923076923077
+1000004825_LoF,GO::G protein-coupled acetylcholine receptor signaling pathway,LoF,0.125,0.307,0.5407923076923077
+1000001516_LoF,GO::protein localization to mitochondrion,LoF,0.075,0.293,0.5407923076923077
+1000001364_LoF,GO::cellular response to exogenous dsRNA,LoF,0.1375,0.298,0.5407923076923077
+1000000662_LoF,GO::natural killer cell activation,LoF,0.2,0.307,0.5407923076923077
+1000007178_LoF,GO::positive regulation of phosphatidylinositol 3-kinase activity,LoF,0.2125,0.298,0.5407923076923077
+1000004704_LoF,GO::toll-like receptor 9 signaling pathway,LoF,0.125,0.307,0.5407923076923077
+1000007415_LoF,GO::axon extension,LoF,0.1875,0.304,0.5407923076923077
+1000000341_LoF,GO::melanin biosynthetic process,LoF,0.1125,0.314,0.5489007633587786
+1000006659_LoF,GO::sprouting angiogenesis,LoF,0.2125,0.325,0.5638257575757576
+1000001725_LoF,GO::toxin transport,LoF,0.2375,0.329,0.563955223880597
+1000007419_LoF,GO::G2/M transition of mitotic cell cycle,LoF,0.575,0.33,0.563955223880597
+1000007532_LoF,GO::detection of mechanical stimulus involved in sensory perception of sound,LoF,0.1,0.353,0.5708873239436619
+1000009240_LoF,kegg::Human papillomavirus infection - Homo sapiens (human),LoF,0.775,0.344,0.5708873239436619
+1000004794_LoF,GO::embryonic eye morphogenesis,LoF,0.0875,0.347,0.5708873239436619
+1000004009_LoF,GO::spindle organization,LoF,0.125,0.351,0.5708873239436619
+1000008149_LoF,GO::positive regulation of blood vessel endothelial cell migration,LoF,0.3,0.354,0.5708873239436619
+1000005285_LoF,GO::positive regulation of cardiac muscle cell apoptotic process,LoF,0.1375,0.34,0.5708873239436619
+1000006384_LoF,GO::regulation of neuron death,LoF,0.1375,0.34,0.5708873239436619
+1000005843_LoF,GO::Notch signaling involved in heart development,LoF,0.0875,0.347,0.5708873239436619
+1000002895_LoF,GO::intraciliary transport involved in cilium assembly,LoF,0.2375,0.36,0.5765034965034964
+1000001478_LoF,GO::synaptic membrane adhesion,LoF,0.1625,0.373,0.5931736111111111
+1000003047_LoF,GO::cellular response to leucine starvation,LoF,0.0875,0.384,0.598204081632653
+1000002389_LoF,GO::positive regulation of T cell differentiation in thymus,LoF,0.0875,0.384,0.598204081632653
+1000007791_LoF,GO::negative regulation of double-strand break repair via homologous recombination,LoF,0.125,0.38,0.598204081632653
+1000000149_LoF,GO::determination of left/right symmetry,LoF,0.3125,0.412,0.6374864864864865
+1000002896_LoF,GO::actomyosin structure organization,LoF,0.1625,0.417,0.6408926174496644
+1000005348_LoF,GO::positive regulation of macroautophagy,LoF,0.1875,0.439,0.6488333333333334
+1000004016_LoF,GO::inositol trisphosphate biosynthetic process,LoF,0.1125,0.459,0.6488333333333334
+1000004114_LoF,GO::learning,LoF,0.3125,0.454,0.6488333333333334
+1000003920_LoF,GO::purine-containing compound salvage,LoF,0.1,0.441,0.6488333333333334
+1000002221_LoF,GO::negative regulation of smooth muscle cell migration,LoF,0.1,0.441,0.6488333333333334
+1000007016_LoF,GO::positive regulation of granulocyte macrophage colony-stimulating factor production,LoF,0.0875,0.449,0.6488333333333334
+1000008036_LoF,GO::regulation of dendritic spine morphogenesis,LoF,0.1125,0.459,0.6488333333333334
+1000001941_LoF,GO::B cell differentiation,LoF,0.35,0.451,0.6488333333333334
+1000002475_LoF,GO::long-term synaptic depression,LoF,0.1125,0.459,0.6488333333333334
+1000009134_LoF,kegg::RIG-I-like receptor signaling pathway - Homo sapiens (human),LoF,0.35,0.459,0.6488333333333334
+1000008034_LoF,GO::positive regulation of dendritic spine morphogenesis,LoF,0.125,0.445,0.6488333333333334
+1000007714_LoF,GO::DNA unwinding involved in DNA replication,LoF,0.0875,0.449,0.6488333333333334
+1000000575_LoF,GO::neural crest cell migration,LoF,0.2625,0.428,0.6488333333333334
+1000007500_LoF,GO::regulation of ERK1 and ERK2 cascade,LoF,0.1625,0.462,0.6490674846625767
+1000005139_LoF,GO::antigen processing and presentation of exogenous peptide antigen via MHC class I; TAP-independent,LoF,0.075,0.472,0.6590731707317072
+1000009279_LoF,kegg::Hypertrophic cardiomyopathy (HCM) - Homo sapiens (human),LoF,0.375,0.479,0.6647939393939394
+1000009272_LoF,kegg::Autoimmune thyroid disease - Homo sapiens (human),LoF,0.2625,0.484,0.6676867469879517
+1000005237_LoF,GO::type I interferon signaling pathway,LoF,0.3375,0.492,0.6733690476190476
+1000003720_LoF,GO::negative regulation of protein import into nucleus,LoF,0.0875,0.494,0.6733690476190476
+1000009251_LoF,kegg::MicroRNAs in cancer - Homo sapiens (human),LoF,0.725,0.503,0.6815798816568047
+1000005862_LoF,GO::positive regulation of synapse assembly,LoF,0.3,0.511,0.6816744186046512
+1000001595_LoF,GO::negative regulation of transcription; DNA-templated,LoF,0.8375,0.51,0.6816744186046512
+1000005387_LoF,GO::forelimb morphogenesis,LoF,0.075,0.512,0.6816744186046512
+1000009281_LoF,kegg::Dilated cardiomyopathy (DCM) - Homo sapiens (human),LoF,0.4,0.53,0.7015606936416185
+1000009125_LoF,kegg::Tight junction - Homo sapiens (human),LoF,0.575,0.542,0.7049106145251397
+1000004599_LoF,GO::skeletal system morphogenesis,LoF,0.175,0.551,0.7049106145251397
+1000009002_LoF,kegg::Starch and sucrose metabolism - Homo sapiens (human),LoF,0.1875,0.547,0.7049106145251397
+1000008743_LoF,GO::humoral immune response,LoF,0.2625,0.545,0.7049106145251397
+1000001730_LoF,GO::positive regulation of ruffle assembly,LoF,0.1,0.542,0.7049106145251397
+1000009099_LoF,kegg::PI3K-Akt signaling pathway - Homo sapiens (human),LoF,0.75,0.551,0.7049106145251397
+1000008792_LoF,GO::protein localization to kinetochore,LoF,0.075,0.557,0.7086277777777779
+1000006889_LoF,GO::transmembrane receptor protein tyrosine kinase signaling pathway,LoF,0.425,0.563,0.7123038674033149
+1000002135_LoF,GO::positive regulation of chromatin binding,LoF,0.0875,0.575,0.723489010989011
+1000005568_LoF,GO::ventricular trabecula myocardium morphogenesis,LoF,0.1,0.587,0.7249625668449198
+1000006258_LoF,GO::melanocyte differentiation,LoF,0.1125,0.592,0.7249625668449198
+1000009285_LoF,humanCyc::D-myo-inositol-5-phosphate,LoF,0.1125,0.592,0.7249625668449198
+1000009246_LoF,kegg::Pathways in cancer - Homo sapiens (human),LoF,0.825,0.585,0.7249625668449198
+1000004154_LoF,GO::neuron cellular homeostasis,LoF,0.1,0.587,0.7249625668449198
+1000006229_LoF,GO::axon guidance,LoF,0.6,0.601,0.7320691489361701
+1000000002_LoF,GO::cellular response to amino acid starvation,LoF,0.2,0.605,0.7330423280423279
+1000007409_LoF,GO::phosphate-containing compound metabolic process,LoF,0.1,0.617,0.7359010416666667
+1000009237_LoF,kegg::Measles - Homo sapiens (human),LoF,0.4625,0.612,0.7359010416666667
+1000008776_LoF,GO::negative regulation of endothelial cell apoptotic process,LoF,0.175,0.616,0.7359010416666667
+1000007431_LoF,GO::negative regulation of inflammatory response,LoF,0.3875,0.65,0.7712435233160623
+1000005390_LoF,GO::positive regulation of apoptotic signaling pathway,LoF,0.125,0.666,0.7861546391752577
+1000004871_LoF,GO::regulation of transcription; DNA-templated,LoF,0.8,0.677,0.7869695431472081
+1000008506_LoF,GO::positive regulation of telomerase RNA localization to Cajal body,LoF,0.0875,0.675,0.7869695431472081
+1000009135_LoF,kegg::Cytosolic DNA-sensing pathway - Homo sapiens (human),LoF,0.25,0.675,0.7869695431472081
+1000006571_LoF,GO::negative regulation of G0 to G1 transition,LoF,0.175,0.684,0.7910909090909092
+1000008114_LoF,GO::angiogenesis,LoF,0.6125,0.698,0.8032261306532662
+1000003821_LoF,GO::iron ion homeostasis,LoF,0.15,0.703,0.804935
+1000008446_LoF,GO::dentate gyrus development,LoF,0.0875,0.729,0.8287079207920792
+1000006320_LoF,GO::gene silencing by RNA,LoF,0.1375,0.731,0.8287079207920792
+1000009364_LoF,humanCyc::phosphatidylglycerol,LoF,0.1,0.754,0.8505714285714286
+1000006944_LoF,GO::regulation of postsynaptic membrane potential,LoF,0.15,0.764,0.8576274509803922
+1000009068_LoF,kegg::MAPK signaling pathway - Homo sapiens (human),LoF,0.65,0.8,0.8936585365853659
+1000008445_LoF,GO::regulation of reactive oxygen species metabolic process,LoF,0.0875,0.815,0.8972836538461538
+1000009234_LoF,kegg::Tuberculosis - Homo sapiens (human),LoF,0.4875,0.814,0.8972836538461538
+1000009290_LoF,humanCyc::CDP-diacylglycerol,LoF,0.0875,0.815,0.8972836538461538
+1000002299_LoF,GO::uterus development,LoF,0.075,0.824,0.9028516746411482
+1000003186_LoF,GO::positive regulation of angiogenesis,LoF,0.3875,0.863,0.9384719626168224
+1000007922_LoF,GO::cellular calcium ion homeostasis,LoF,0.275,0.866,0.9384719626168224
+1000006552_LoF,GO::cellular response to organic cyclic compound,LoF,0.1625,0.87,0.9384719626168224
+1000005681_LoF,GO::miRNA mediated inhibition of translation,LoF,0.275,0.877,0.9384719626168224
+1000002507_LoF,GO::cytokine-mediated signaling pathway,LoF,0.6,0.873,0.9384719626168224
+1000007374_LoF,GO::cell projection organization,LoF,0.1375,0.889,0.944625
+1000007273_LoF,GO::positive regulation of receptor-mediated endocytosis,LoF,0.0875,0.891,0.944625
+1000008777_LoF,GO::positive regulation of endothelial cell apoptotic process,LoF,0.1,0.897,0.9466036866359447
+1000000346_LoF,GO::negative regulation of insulin secretion,LoF,0.1125,0.919,0.9522669683257918
+1000002108_LoF,GO::negative regulation of peptidyl-threonine phosphorylation,LoF,0.075,0.913,0.9522669683257918
+1000002675_LoF,GO::negative regulation of fibroblast growth factor receptor signaling pathway,LoF,0.075,0.913,0.9522669683257918
+1000008966_LoF,kegg::Pentose phosphate pathway - Homo sapiens (human),LoF,0.1125,0.919,0.9522669683257918
+1000001333_LoF,GO::cell-cell signaling,LoF,0.475,0.936,0.9655135135135136
+1000007424_LoF,GO::negative regulation of sprouting angiogenesis,LoF,0.1125,0.967,0.9930179372197309
+1000008738_LoF,GO::inflammatory response,LoF,0.5875,0.985,0.9980752212389381
+1000008620_LoF,GO::cell cycle,LoF,0.45,0.984,0.9980752212389381
+1000000390_LoF,GO::apoptotic process,LoF,0.7125,0.985,0.9980752212389381
+1000004873_LoF,GO::regulation of transcription by RNA polymerase II,LoF,0.85,0.99,0.9987224669603524
+1000000833_LoF,GO::gene silencing by miRNA,LoF,0.3875,1.0,1.0
+1000007738_LoF,GO::defense response to bacterium,LoF,0.3,0.999,1.0
