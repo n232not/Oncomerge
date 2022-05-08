@@ -70,15 +70,17 @@ parser.add_argument('-bl', '--blacklist', help='List of patients (one per line) 
 parser.add_argument('-g2g', '--gene2go', help='Gene2Go pathways', type = str, default = 'pathways/gene2go.hsa.csv')
 parser.add_argument('-kegg', '--kegg', help='Kegg pathways', type = str, default = 'pathways/keggPathwayGenes_hsa_3_10_2019.csv')
 parser.add_argument('-huam', '--huamncyc', help='huamncyc pathways', type = str, default='pathways/huamncyc_PC2_3_11_2019.csv')
+parser.add_argument('-pid', '--pid', help='PID pathways', type = str, default = 'pathways/PID.csv')
+parser.add_argument('-os', '--oncosig', help='Oncogenic Signature pathways', type = str, default = 'pathways/OncoSig.csv')
+parser.add_argument('-hall', '--hallmark', help='Hallmark pathways', type = str, default='pathways/hall.csv')
 args = parser.parse_args()
 
 def pathwayPool(i):
     perms = []
-    
-    tmp1 = [i[1].loc[np.random.choice(i[1].index, i[0])].sum(axis=0) for j in range(i[4])]
-    tmp2 = [i[3].loc[np.random.choice(i[3].index, i[0])].sum(axis=0) for j in range(i[4])]
+    tmp1 = [np.array(i[1].loc[np.random.choice(i[1].index, i[0])].sum(axis=0)) for j in range(i[4])]
+    tmp2 = [np.array(i[3].loc[np.random.choice(i[3].index, i[0])].sum(axis=0)) for j in range(i[4])]
     if type(i[2])!=str:
-        tmp3 = [i[2].loc[np.random.choice(i[2].index, i[0])].sum(axis=0) for j in range(i[4])]
+        tmp3 = [np.array(i[2].loc[np.random.choice(i[2].index, i[0])].sum(axis=0)) for j in range(i[4])]
         temp = []
         for j in range(i[4]): 
             temp.append((tmp1[j] + tmp2[j] + tmp3[j]).clip(0,1).mean())
@@ -287,18 +289,24 @@ if __name__ == "__main__":
 
     # %%
     #Add Pathways
-    gene2go = pd.read_csv(params['gene2go'], header=None).iloc[: , 1:]
-    kegg = pd.read_csv(params['kegg'], header=0).iloc[: , 1:]
-    huam = pd.read_csv(params['huamncyc'], header=None, sep=",").iloc[: , 1:3]
+    #gene2go = pd.read_csv(params['gene2go'], header=None).iloc[: , 1:]
+    #kegg = pd.read_csv(params['kegg'], header=0).iloc[: , 1:]
+    #huam = pd.read_csv(params['huamncyc'], header=None, sep=",").iloc[: , 1:3]
 
-    gene2go.iloc[:,0] ='GO::' + gene2go.iloc[:,0]
-    kegg.iloc[:,0] ='kegg::' + kegg.iloc[:,0]
-    huam.iloc[:,0] ='humanCyc::' + huam.iloc[:,0]
-    kegg.columns = pd.Index([1,2])
+    #gene2go.iloc[:,0] ='GO::' + gene2go.iloc[:,0]
+    #kegg.iloc[:,0] ='kegg::' + kegg.iloc[:,0]
+    #huam.iloc[:,0] ='humanCyc::' + huam.iloc[:,0]
+    #kegg.columns = pd.Index([1,2])
 
-    pathways =pd.DataFrame(pd.concat([gene2go, kegg, huam], axis=0).iloc[:,0:2]).dropna()
+    PID = pd.read_csv(params['pid'], header=0, index_col=0)
+    OncoSig = pd.read_csv(params['oncosig'], header=0, index_col=0)
+    hall = pd.read_csv(params['hallmark'], header=0, index_col=0)
+
+    #pathways =pd.DataFrame(pd.concat([PID, OncoSig, hall], axis=0).iloc[:,0:2]).dropna()
+    pathways = pd.concat([PID, OncoSig, hall], axis=0)
     pathways.columns = ['Pathway', 'Genes']
-    pathways['Genes'] = pathways['Genes'].apply(lambda x: list(map(int, str(x).split(' '))))
+    #pathways['Genes'] = pathways['Genes'].apply(lambda x: list(map(int, str(x).split(' '))))
+    pathways['Genes'] = pathways['Genes'].apply( lambda x: list(map(int, list(str(x[1:-1]).split(", ")))))
     pathways = pathways.loc[pathways['Genes'].map(len) > 1]
     genes = pathways['Genes'].map(set)
     pathways['Genes'] = genes.map(list)
@@ -654,8 +662,6 @@ if __name__ == "__main__":
                     if not (str(s1)+'_LoF' in pamLofAct[str(s1)] or tmpLoF[tmpLoF.index.difference(blacklist)].sum() == tmpSom[tmpSom.index.difference(blacklist)].sum() or tmpLoF[tmpLoF.index.difference(blacklist)].sum() == tmpNeg[tmpNeg.index.difference(blacklist)].sum()):
                         pamLofAct[str(s1)][str(s1)+'_LoF'] = tmpLoF
                         pamLofAct[str(s1)][str(s1)+'_CNAdel'] = tmpNeg
-                    elif not (str(s1)+'_CNAdel' in pamLofAct[str(s1)] or tmpLoF[tmpLoF.index.difference(blacklist)].sum() == tmpSom[tmpSom.index.difference(blacklist)].sum()): 
-                        pamLofAct[str(s1)][str(s1)+'_CNAdel'] = tmpNeg
         for s1 in set(delLoci[loci1]).difference(somMuts.index):
             if s1>0:
                 tmpNeg = negD1.loc[s1]
@@ -749,10 +755,10 @@ if __name__ == "__main__":
     # Permute to get frequency
     def singlePermute(somMutsMF, somFusionMF, somCNAsMF):
         perms = []
-        tmp1 = somMutsMF.loc[np.random.choice(somMutsMF.index, 1)]
-        tmp2 = somCNAsMF.loc[np.random.choice(somCNAsMF.index, 1)]
+        tmp1 = np.array(somMutsMF.loc[np.random.choice(somMutsMF.index, 1)])
+        tmp2 = np.array(somCNAsMF.loc[np.random.choice(somCNAsMF.index, 1)])
         if type(somFusionMF)!=str:
-            tmp3 = somFusionMF.loc[np.random.choice(somFusionMF.index, 1)]
+            tmp3 = np.array(somFusionMF.loc[np.random.choice(somFusionMF.index, 1)])
             temp = (tmp1 + tmp2 + tmp3).clip(0,1)
             perms = temp.mean()
         else:
@@ -827,7 +833,7 @@ if __name__ == "__main__":
     # Pathway Permutations
     def singlePathwayPermute(somMuts, somFusions, somCNAs, numPermutes):
         with Pool(processes=7) as p: 
-            permuts =  list(tqdm(p.imap(pathwayPool, [[i, somMuts, somFusionMF, somCNAs, numPermutes] for i in pathways["length"].unique()]), total=len(pathways["length"].unique())))
+            permuts =  list(tqdm(p.imap(pathwayPool, [[i, somMuts, somFusions, somCNAs, numPermutes] for i in pathways["length"].unique()]), total=len(pathways["length"].unique())))
         perm = dict()
         for i in permuts:
             perm[i[0]] = i[1]
@@ -995,8 +1001,8 @@ if __name__ == "__main__":
     # %%
     for locus1 in highFreqLoci.index:
         genesInLocus = [i for i in lociCNAgenes[locus1] if (str(i)+'_Act' in keepLofAct or str(i)+'_LoF' in keepLofAct or str(i)+'_CNAamp' in keepLofAct or str(i)+'_CNAdel' in keepLofAct)]
-        ActLoFInLocus = [i for i in AmpDelLoci[locus1.split('_')[0]] if (str(i)+'_Act' in keepLofAct or str(i)+'_LoF' in keepLofAct)]
-        if (len(genesInLocus)>0 or len(ActLoFInLocus))>0:
+        # ActLoFInLocus = [i for i in AmpDelLoci[locus1.split('_')[0]] if (str(i)+'_Act' in keepLofAct or str(i)+'_LoF' in keepLofAct)]
+        if len(genesInLocus)>0:
             explainedLoc.append(locus1.split('_')[0])
         else:
             keepLoc.append(locus1)
@@ -1062,53 +1068,62 @@ if __name__ == "__main__":
     from rpy2.robjects import pandas2ri
     from rpy2.robjects.conversion import localconverter
 
+    # add fusions
+
     ro.r('''
         # create a function `f`
         MEanalysis <- function(somMuts, posD1, negD1, Act, LoF, pathways){
-            Act<-Act
-            LoF<-LoF
             library("Rediscover")
             library("tidyverse")
             library("discover")
             out = data.frame(names=character(), ME_pvalues=double())
+            somPM <- getPM(data.matrix(somMuts))
+            posPM <- getPM(data.matrix(posD1))
+            negPM <- getPM(data.matrix(negD1))
+            actPM <- getPM(data.matrix(Act))
+            lofPM <- getPM(data.matrix(LoF))
             if (nrow(pathways) > 0){
                 for (row in 1:nrow(pathways)) {
-                if (pathways[row, "Final_mutation_type"] == "PAM"){
-                    muts = somMuts
-                }
-                if (pathways[row, "Final_mutation_type"] == "CNAamp"){
-                    muts = posD1
-                }
-                if (pathways[row, "Final_mutation_type"] == "CNADel"){
-                    muts = negD1
-                }
-                if (pathways[row, "Final_mutation_type"] == "Act"){
-                    muts = Act
-                }
-                if (pathways[row, "Final_mutation_type"] == "LoF"){
-                    muts = LoF
-                }
-                if (nchar(pathways[row, "Somatically_Mutated_Genes"])>2){
-                    genes <-as.vector(strsplit(substring(pathways[row, "Somatically_Mutated_Genes"], 2,nchar(pathways[row, "Somatically_Mutated_Genes"])-1), ", "))[[1]]
-                    genes <- genes[genes %in% rownames(muts)]
-                    A = data.matrix(muts)
-                    PM <- getPM(A)
-                    x= data.frame(rownames(muts))
-                    x$indices = rownames(x)
-                    p_val = getMutexGroup(data.matrix(A[genes,]), PM[as.numeric(c(filter(x, rownames.muts. %in% genes)$indices)),], "Coverage")
-                    out[nrow(out) + 1,] = c(pathways[row, "Pathway_Name"], p_val)
-                }
+                    if (pathways[row, "Final_mutation_type"] == "PAM"){
+                        muts = somMuts
+                        PM = somPM
+                    }
+                    if (pathways[row, "Final_mutation_type"] == "CNAamp"){
+                        muts = posD1
+                        PM = posPM
+                    }
+                    if (pathways[row, "Final_mutation_type"] == "CNADel"){
+                        muts = negD1
+                        PM = negPM
+                    }
+                    if (pathways[row, "Final_mutation_type"] == "Act"){
+                        muts = Act
+                        PM = actPM
+                    }
+                    if (pathways[row, "Final_mutation_type"] == "LoF"){
+                        muts = LoF
+                        PM = lofPM
+                    }
+                    if (nchar(pathways[row, "Somatically_Mutated_Genes"])>2){
+                        genes <-as.vector(strsplit(substring(pathways[row, "Somatically_Mutated_Genes"], 2,nchar(pathways[row, "Somatically_Mutated_Genes"])-1), ", "))[[1]]
+                        genes <- genes[genes %in% rownames(muts)]
+                        A = data.matrix(muts)
+                        x= data.frame(rownames(muts))
+                        x$indices = rownames(x)
+                        p_val = getMutexGroup(data.matrix(A[genes,]), PM[as.numeric(c(filter(x, rownames.muts. %in% genes)$indices)),], "Coverage")
+                        out[nrow(out) + 1,] = c(pathways[row, "Pathway_Name"], p_val)
+                    }
                 }
             }
             return(out)
             }
         ''')
     MEanalysis_r = ro.globalenv['MEanalysis']
-    MEmuts = somMuts.copy().astype(int)
+    MEmuts = (somMuts.loc[list(set(somMuts.index).intersection(set(fusions.index))),:] + fusions.loc[list(set(somMuts.index).intersection(set(fusions.index))),:]).clip(0,1).astype(int)
     MEpos = posD1.copy().astype(int)
     MEneg = negD1.copy().astype(int)
-    MEact = (somMuts.loc[list(set(somMuts.index).intersection(set(posD1.index))),:] + posD1.loc[list(set(somMuts.index).intersection(set(posD1.index))),:]).clip(0,1).astype(int)
-    MElof = (somMuts.loc[list(set(somMuts.index).intersection(set(negD1.index))),:] + negD1.loc[list(set(somMuts.index).intersection(set(negD1.index))),:]).clip(0,1).astype(int)
+    MEact = (MEmuts.loc[list(set(MEmuts.index).intersection(set(posD1.index))),:] + posD1.loc[list(set(MEmuts.index).intersection(set(posD1.index))),:]).clip(0,1).astype(int)
+    MElof = (MEmuts.loc[list(set(MEmuts.index).intersection(set(negD1.index))),:] + negD1.loc[list(set(MEmuts.index).intersection(set(negD1.index))),:]).clip(0,1).astype(int)
     #with localconverter(ro.default_converter + pandas2ri.converter):
     #    MEmuts_r = ro.conversion.py2rpy(MEmuts)
     #print("Converted Somatic Mutations.")
